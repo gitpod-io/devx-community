@@ -1,3 +1,5 @@
+image: gitpod/workspace-full-vnc:latest
+
 ports:
   - port: 5173
     onOpen: open-preview
