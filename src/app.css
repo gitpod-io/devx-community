@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('/fonts/Manrope-Regular.woff2') format('woff2');
+}
+
+@layer base {
+	:root {
+		--color-primary: #ff5043;
+		--color-headline: #161616;
+		--color-paragraph: #5d5959;
+		--color-brown: #cdc0b2;
+		--color-background: #f5f4f4;
+		--color-boxes: #fdfdfd;
+
+		--gradient-primary: linear-gradient(224.91deg, #ff5043 32.52%, #cdc0b2 79.06%);
+		--gradient-stroke: linear-gradient(180deg, #ffffff 0%, #ece7e5 100%);
+	}
+
+	.dark {
+		--color-primary: #ff5043;
+		--color-headline: #fdfbfb;
+		--color-paragraph: #bfbfbf;
+		--color-brown: #64584a;
+		--color-background: #161616;
+		--color-boxes: #fdfdfd;
+
+		--gradient-primary: linear-gradient(224.91deg, #ff5043 32.52%, #64584a 79.06%);
+		--gradient-stroke: linear-gradient(179.95deg, #332d23 0.04%, #0f0e0b 99.8%);
+	}
+}
