@@ -9,26 +9,37 @@
 
 @layer base {
 	:root {
-		--color-primary: #ff5043;
-		--color-headline: #161616;
-		--color-paragraph: #5d5959;
-		--color-brown: #cdc0b2;
-		--color-background: #f5f4f4;
-		--color-boxes: #fdfdfd;
+		--black: #161616;
+		--grey: #5d5959;
+		--grey-light: #bfbfbf;
+		--grey-slight: #f5f4f4;
+		--red: #ff5043;
+		--brown-light: #cdc0b2;
+		--brown-dark: #64584a;
+		--white: #fdfdfd;
+		--white-light: #fdfbfb;
 
-		--gradient-primary: linear-gradient(224.91deg, #ff5043 32.52%, #cdc0b2 79.06%);
+		--hightlight: var(--red);
+		--box: var(--white);
+	}
+
+	body.light {
+		--important: var(--black);
+		--body: var(--grey);
+		--sub: var(--brown-light);
+		--bg: var(--grey-slight);
+
+		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #cdc0b2 79.06%);
 		--gradient-stroke: linear-gradient(180deg, #ffffff 0%, #ece7e5 100%);
 	}
 
-	.dark {
-		--color-primary: #ff5043;
-		--color-headline: #fdfbfb;
-		--color-paragraph: #bfbfbf;
-		--color-brown: #64584a;
-		--color-background: #161616;
-		--color-boxes: #fdfdfd;
+	body.dark {
+		--body: var(--grey-light);
+		--important: var(--white-light);
+		--sub: var(--brown-dark);
+		--bg: var(--black);
 
-		--gradient-primary: linear-gradient(224.91deg, #ff5043 32.52%, #64584a 79.06%);
+		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #64584a 79.06%);
 		--gradient-stroke: linear-gradient(179.95deg, #332d23 0.04%, #0f0e0b 99.8%);
 	}
 }
