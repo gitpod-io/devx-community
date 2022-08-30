@@ -6,12 +6,11 @@ const config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: 'var(--color-primary)',
-				headline: 'var(--color-headline)',
-				paragraph: 'var(--color-paragraph)',
-				brown: 'var(--color-brown)',
-				background: 'var(--color-background)',
-				boxes: 'var(--color-boxes)'
+				highlight: 'var(--highlight)',
+				important: 'var(--important)',
+				body: 'var(--body)',
+				sub: 'var(--sub)',
+				bg: 'var(--bg)'
 			},
 			backgroundImage: {
 				primary: 'var(--gradient-primary)',
