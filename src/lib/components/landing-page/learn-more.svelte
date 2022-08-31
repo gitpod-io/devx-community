@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { learnMoreItems } from '$lib/contents';
-	import LinkButton from './link-button.svelte';
-	import Section from './section.svelte';
+	import LinkButton from '../library/link-button.svelte';
+	import Section from '../section.svelte';
 </script>
 
 <Section
@@ -17,5 +17,5 @@
 			</div>
 		{/each}
 	</div>
-	<LinkButton href="" class="mt-small">Join the community</LinkButton>
+	<LinkButton href="">Join the community</LinkButton>
 </Section>
