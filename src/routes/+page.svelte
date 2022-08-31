@@ -2,8 +2,9 @@
 	import FoundingMembers from '$lib/components/founding-members.svelte';
 	import Hero from '$lib/components/hero.svelte';
 	import LearnMore from '$lib/components/learn-more.svelte';
-	import LinkButton from '$lib/components/link-button.svelte';
 	import Section from '$lib/components/section.svelte';
+
+	import GradientLinkButton from '$lib/components/library/gradient-link-button.svelte';
 </script>
 
 <Hero />
@@ -21,8 +22,8 @@
 	titleClassNames="max-w-xl mx-auto"
 	textClassNames="max-w-[558px]"
 >
-	<div class="flex justify-center">
-		<LinkButton href="" class="mt-small">Join the community</LinkButton>
+	<div class="mt-small flex justify-center">
+		<GradientLinkButton href="">Join the community</GradientLinkButton>
 	</div>
 </Section>
 

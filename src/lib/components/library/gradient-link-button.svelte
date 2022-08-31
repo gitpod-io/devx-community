@@ -1,9 +1,11 @@
 <script lang="ts">
 	export let href: string;
+	const target = href.startsWith('http') ? '_blank' : null;
 	export let rel = '';
 </script>
 
 <a
+	{target}
 	{href}
 	{rel}
 	class="gradient-border tracking[0.2em] rounded-[40px] border-4 border-double border-transparent px-8 py-4 text-inter text-explicit-white-light transition-all delay-50 duration-200 hover:shadow-hover-default"
