@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Dot from './dot.svelte';
+
 	export let height = 18;
 	export let width = 18;
 	let clazz = '';
@@ -10,6 +12,6 @@
 	style="max-width: {2 * width + 4}px;"
 >
 	{#each Array(4) as _}
-		<div class="rounded-full bg-primary" style="height: {height}px; width: {width}px" />
+		<Dot class="h-[{height}px] w-[{width}px]" />
 	{/each}
 </div>
