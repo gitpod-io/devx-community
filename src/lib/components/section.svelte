@@ -6,9 +6,12 @@
 	export let textClassNames = '';
 	export let titleClassNames = '';
 	export let dots = false;
+
+	let clazz = '';
+	export { clazz as class };
 </script>
 
-<section class="bottom-lined pt-medium">
+<section class="bottom-lined pt-medium {clazz}">
 	<h2 class="h2 pb-medium text-center {titleClassNames}">{title}</h2>
 	<p class="mx-auto {textClassNames}">{text}</p>
 	<slot />

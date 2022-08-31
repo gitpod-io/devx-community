@@ -10,7 +10,7 @@
 <a
 	{href}
 	{target}
-	class="rounded-[2.5rem] border border-solid px-x-small py-4 text-inter text-important {clazz}"
+	class="rounded-[2.5rem] border border-solid border-important px-x-small py-4 text-inter text-important {clazz}"
 >
 	<slot />
 </a>
