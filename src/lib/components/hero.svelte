@@ -1,6 +1,6 @@
 <header>
 	<div class="mx-auto grid max-w-[310px] grid-cols-2 gap-4">
-		{#each Array(4) as _, i}
+		{#each Array(4) as _}
 			<div class="h-36 w-36 rounded-full bg-primary" />
 		{/each}
 	</div>
