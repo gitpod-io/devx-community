@@ -30,7 +30,7 @@
 		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
 		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
 	</div>
-	<h1 class="h3 mx-auto mt-x-large max-w-[400px] text-center">
+	<h1 class="h3 mx-auto mt-x-large max-w-[410px] text-center">
 		Bring back joy and speed to our workflows
 	</h1>
 </header>
