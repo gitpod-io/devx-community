@@ -17,25 +17,34 @@ const config = {
 				stroke: 'var(--gradient-stroke)'
 			},
 			spacing: {
-				'xx-large': '10rem',
-				'x-large': '4.5rem',
-				large: '4rem',
-				medium: '3.5rem',
-				small: '3rem',
-				'x-small': '2rem'
+				'xx-large': 'var(--xx-large)',
+				'x-large': 'var(--x-large)',
+				large: 'var(--large)',
+				medium: 'var(--medium)',
+				small: 'var(--small)',
+				'x-small': 'var(--x-small)'
 			},
 			fontFamily: {
 				sans: ['Manrope', ...defaultTheme.fontFamily.sans]
 			},
 			fontSize: {
+				h1: 'var(--h1)',
+				h2: 'var(--h2)',
+				h3: 'var(--h3)',
+
+				'p-x-large': 'var(--p-x-large)',
+				'p-large': 'var(--p-large)',
+				'p-medium': 'var(--p-medium)',
+				'p-small': 'var(--p-small)',
+
 				inter: [
-					'1.25rem',
+					'var(--p-large)',
 					{
 						lineHeight: '1.625rem',
 						letterSpacing: '0.2em'
 					}
 				],
-				body: ['1.125rem', { lineHeight: '1.688rem' }]
+				body: ['var(--p-small)', { lineHeight: '1.688rem' }]
 			}
 		}
 	},

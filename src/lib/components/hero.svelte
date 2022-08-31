@@ -4,7 +4,7 @@
 			<div class="h-36 w-36 rounded-full bg-primary" />
 		{/each}
 	</div>
-	<h1 class="h3 mx-auto mt-x-large max-w-[320px] text-center">
+	<h1 class="h3 mx-auto mt-x-large max-w-[360px] text-center">
 		Bring back joy and speed to our workflows
 	</h1>
 </header>
