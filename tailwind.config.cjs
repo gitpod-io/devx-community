@@ -10,7 +10,8 @@ const config = {
 				important: 'var(--important)',
 				body: 'var(--body)',
 				sub: 'var(--sub)',
-				bg: 'var(--bg)'
+				bg: 'var(--bg)',
+				black: 'var(--black)'
 			},
 			backgroundImage: {
 				primary: 'var(--gradient-primary)',
