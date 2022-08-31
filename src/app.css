@@ -48,6 +48,8 @@
 	*::after {
 		@apply m-0 p-0;
 		box-sizing: inherit;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
 	html {
@@ -56,17 +58,27 @@
 
 	body {
 		@apply bg-bg text-body;
+		text-rendering: optimizeLegibility;
 	}
 
 	h1,
 	h2,
 	h3 {
-		@apply text-important;
+		@apply font-bold text-important;
 	}
 }
 
 @layer components {
+	.h2 {
+		@apply text-[3rem] leading-[3.375rem];
+	}
+
 	.h3 {
-		@apply text-[28px] leading-[38.25px];
+		@apply text-[1.75rem] leading-[2.391rem];
+	}
+
+	.bottom-lined::after {
+		content: '';
+		@apply mx-auto mt-large block h-32 w-[3px] bg-sub;
 	}
 }
