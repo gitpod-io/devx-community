@@ -22,7 +22,7 @@
 	titleClassNames="max-w-xl mx-auto"
 	textClassNames="max-w-[558px]"
 >
-	<div class="mt-small flex justify-center">
+	<div class="mt-x-large flex justify-center">
 		<GradientLinkButton href="">Join the community</GradientLinkButton>
 	</div>
 </Section>
