@@ -1,4 +1,6 @@
-<div class="gradient-border rounded-2xl border border-double border-transparent p-4">
+<div
+	class="gradient-border h-full rounded-2xl border-[2.5px] border-double border-transparent p-4 transition-all delay-50 duration-200 hover:cursor-pointer hover:shadow-hover-default"
+>
 	<slot />
 </div>
 
