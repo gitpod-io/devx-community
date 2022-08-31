@@ -1,5 +1,16 @@
-<script>
+<script lang="ts">
+	import Nav from '$lib/components/nav.svelte';
 	import '../app.css';
 </script>
 
-<slot />
+<Nav />
+
+<main>
+	<slot />
+</main>
+
+<style lang="postcss">
+	main {
+		@apply mx-auto max-w-7xl;
+	}
+</style>
