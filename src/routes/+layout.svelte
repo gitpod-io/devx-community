@@ -11,6 +11,6 @@
 
 <style lang="postcss">
 	main {
-		@apply mx-auto max-w-7xl;
+		@apply mx-auto max-w-7xl pt-xx-large;
 	}
 </style>

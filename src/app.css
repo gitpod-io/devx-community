@@ -55,6 +55,18 @@
 	}
 
 	body {
-		@apply bg-bg;
+		@apply bg-bg text-body;
+	}
+
+	h1,
+	h2,
+	h3 {
+		@apply text-important;
+	}
+}
+
+@layer components {
+	.h3 {
+		@apply text-[28px] leading-[38.25px];
 	}
 }
