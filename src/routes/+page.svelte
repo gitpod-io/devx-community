@@ -4,7 +4,11 @@
 	import LearnMore from '$lib/components/learn-more.svelte';
 	import LinkButton from '$lib/components/link-button.svelte';
 	import Section from '$lib/components/section.svelte';
+
+	import GradientLinkButton from '$lib/components/library/gradient-link-button.svelte';
 </script>
+
+<GradientLinkButton href="#">Join the Community</GradientLinkButton>
 
 <Hero />
 
