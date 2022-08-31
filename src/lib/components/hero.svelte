@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Dot from './dot.svelte';
+	import Dot from './library/dot.svelte';
 
 	onMount(() => {
 		const dots = document.querySelectorAll<HTMLElement>('.dots div');

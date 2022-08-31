@@ -6,11 +6,22 @@ const config = {
 	theme: {
 		extend: {
 			colors: {
+				explicit: {
+					black: 'var(--black)',
+					'white-light': 'var(--white-light)',
+					'grey-slight': 'var(--grey-slight)'
+				},
 				highlight: 'var(--highlight)',
 				important: 'var(--important)',
 				body: 'var(--body)',
 				sub: 'var(--sub)',
 				bg: 'var(--bg)'
+			},
+			boxShadow: {
+				'hover-default': 'var(--shadow-hover-default)'
+			},
+			transitionDelay: {
+				50: '50ms'
 			},
 			backgroundImage: {
 				primary: 'var(--gradient-primary)',
