@@ -3,7 +3,7 @@
 </script>
 
 <Section title="Founding members">
-	<div class="flex justify-between">
+	<div class="flex flex-wrap justify-center gap-x-small">
 		{#each Array(4) as _}
 			<div class="h-56 w-56 rounded-2xl border border-solid border-highlight" />
 		{/each}
