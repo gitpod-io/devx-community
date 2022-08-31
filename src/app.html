@@ -7,6 +7,39 @@
 		%sveltekit.head%
 	</head>
 	<body>
+		<script>
+			const theme = localStorage.getItem('theme');
+			const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+			if (theme === null) {
+				localStorage.setItem('theme', 'system');
+				if (darkMediaQuery.matches) {
+					document.body.classList.add('dark');
+				} else {
+					document.body.classList.add('light');
+				}
+			} else if (theme === 'dark') {
+				document.body.classList.add('dark');
+			} else if (theme === 'light') {
+				document.body.classList.add('light');
+			} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.body.classList.add('dark');
+			} else {
+				document.body.classList.add('light');
+			}
+
+			darkMediaQuery.addEventListener('change', () => {
+				const storedTheme = localStorage.getItem('theme');
+				if (storedTheme === 'system') {
+					console.log('Called.');
+					if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+						document.body.classList.replace('light', 'dark');
+					} else {
+						document.body.classList.replace('dark', 'light');
+					}
+				}
+			});
+		</script>
 		<div>%sveltekit.body%</div>
 	</body>
 </html>
