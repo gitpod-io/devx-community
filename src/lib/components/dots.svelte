@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Dot from './dot.svelte';
+	import Dot from './library/dot.svelte';
 
 	export let height = 18;
 	export let width = 18;

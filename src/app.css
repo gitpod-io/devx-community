@@ -37,6 +37,8 @@
 		--p-large: 1.25rem;
 		--p-medium: 1.125rem;
 		--p-small: 1rem;
+
+		--shadow-hover-default: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
 	}
 
 	body.light {
