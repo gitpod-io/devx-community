@@ -1,9 +1,10 @@
 <script lang="ts">
 	import ContentSection from '../../library/content-section.svelte';
-	import GradientContentCard from '../../library/gradient-content-card.svelte';
+	// import GradientContentCard from '../../library/gradient-content-card.svelte';
 </script>
 
 <ContentSection
+	id="devx-conf"
 	title="DevX Conf"
 	annotation="watch"
 	iconalt="youtube icon"
@@ -16,10 +17,10 @@
 	<div>
 		<h4 class="h4 pt-large">Highlighted Talks</h4>
 		<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+			<!-- <GradientContentCard />
 			<GradientContentCard />
 			<GradientContentCard />
-			<GradientContentCard />
-			<GradientContentCard />
+			<GradientContentCard /> -->
 		</div>
 	</div>
 </ContentSection>
