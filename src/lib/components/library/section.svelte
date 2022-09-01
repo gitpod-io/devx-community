@@ -1,11 +1,8 @@
 <script lang="ts">
-	import Dots from './dots.svelte';
-
 	export let title: string;
 	export let text = '';
 	export let textClassNames = '';
 	export let titleClassNames = '';
-	export let dots = false;
 	export let line = true;
 
 	let clazz = '';
@@ -17,7 +14,3 @@
 	<p class="mx-auto {textClassNames}">{@html text}</p>
 	<slot />
 </section>
-
-{#if dots}
-	<Dots />
-{/if}
