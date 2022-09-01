@@ -1,5 +1,5 @@
 <script>
-	import Dot from './library/dot.svelte';
+	import Dot from '../library/dot.svelte';
 </script>
 
 <header class="bottom-lined">
