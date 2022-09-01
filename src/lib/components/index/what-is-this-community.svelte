@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Section from '../library/section.svelte';
 	import HowToJoin from './fragments/how-to-join.svelte';
+	import GradientLinkButton from '../library/gradient-link-button.svelte';
 </script>
 
 <Section
@@ -11,5 +12,9 @@
 >
 	<div class="pb-xx-large">
 		<HowToJoin />
+	</div>
+
+	<div class="text-center">
+		<GradientLinkButton href="#">Join the community</GradientLinkButton>
 	</div>
 </Section>
