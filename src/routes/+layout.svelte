@@ -4,12 +4,13 @@
 	import '../app.css';
 </script>
 
-<Nav />
+<div class="flex min-h-screen flex-col">
+	<Nav />
 
-<main
-	class="mx-auto max-w-7xl px-4 pb-x-large pt-xx-large sm:px-x-small md:px-medium lg:px-large xl:px-0"
->
-	<slot />
-</main>
-
-<Footer />
+	<main
+		class="mx-auto max-w-7xl px-4 pb-x-large pt-xx-large sm:px-x-small md:px-medium lg:px-large xl:px-0"
+	>
+		<slot />
+	</main>
+	<Footer />
+</div>

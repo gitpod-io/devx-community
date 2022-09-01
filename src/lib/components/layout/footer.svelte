@@ -4,7 +4,7 @@
 	import Twitter from '../svgs/twitter.svelte';
 </script>
 
-<div class="bg-box">
+<div class="mt-auto bg-box">
 	<footer class="m-auto px-4 py-large md:max-w-6xl md:px-x-small md:py-small">
 		<div class="flex justify-around">
 			<div class="flex max-w-[200px] flex-col gap-x-small">
