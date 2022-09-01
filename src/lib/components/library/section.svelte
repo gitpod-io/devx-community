@@ -12,8 +12,8 @@
 </script>
 
 <section class="bottom-lined pt-medium {clazz}">
-	<h2 class="h2 pb-medium text-center {titleClassNames}">{title}</h2>
-	<p class="mx-auto {textClassNames}">{text}</p>
+	<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
+	<p class="mx-auto {textClassNames}">{@html text}</p>
 	<slot />
 </section>
 
