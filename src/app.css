@@ -42,7 +42,7 @@
 
 		--h1: 5rem;
 		--h2: 3rem;
-		--h3: 2rem;
+		--h3: 1.75rem;
 
 		--p-x-large: 1.5rem;
 		--p-large: 1.25rem;
@@ -106,7 +106,7 @@
 	}
 
 	.h3 {
-		@apply text-h3 leading-[2.391rem];
+		@apply text-h3 leading-[2.391rem] tracking-[0.15em];
 	}
 
 	.bottom-lined::after {
