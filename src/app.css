@@ -104,6 +104,10 @@
 	h5 {
 		@apply font-bold text-important;
 	}
+
+	a {
+		@apply underline transition-all delay-50 duration-200 hover:decoration-transparent;
+	}
 }
 
 @layer components {

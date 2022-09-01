@@ -23,7 +23,6 @@
 	});
 </script>
 
-t
 <header class="bottom-lined relative">
 	<div class="dots mx-auto grid max-w-[208px] grid-cols-2 gap-4 lg:max-w-[310px]">
 		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
