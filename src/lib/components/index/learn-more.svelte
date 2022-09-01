@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { learnMoreItems } from '$lib/contents';
 	import Section from '../library/section.svelte';
 </script>
 
