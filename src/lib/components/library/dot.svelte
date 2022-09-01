@@ -3,4 +3,4 @@
 	export { clazz as class };
 </script>
 
-<div class="rounded-full bg-primary {clazz}" />
+<div class="rounded-full bg-primary {clazz}" {...$$restProps} />

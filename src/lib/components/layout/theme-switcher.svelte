@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Gear from './svgs/switcher/gear.svelte';
-	import Sun from './svgs/switcher/sun.svelte';
-	import Moon from './svgs/switcher/moon.svelte';
+	import Gear from '../svgs/switcher/gear.svelte';
+	import Sun from '../svgs/switcher/sun.svelte';
+	import Moon from '../svgs/switcher/moon.svelte';
 	import { onMount } from 'svelte';
 	let theme: string;
 

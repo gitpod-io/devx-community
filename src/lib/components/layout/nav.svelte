@@ -1,5 +1,5 @@
 <script>
-	import Devx from './svgs/devx.svelte';
+	import Devx from '../svgs/devx.svelte';
 	import ThemeSwitcher from './theme-switcher.svelte';
 </script>
 
