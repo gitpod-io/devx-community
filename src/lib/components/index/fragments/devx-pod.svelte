@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ContentSection from '../../library/content-section.svelte';
-	import GradientContentCard from '../../library/gradient-content-card.svelte';
+	// import GradientContentCard from '../../library/gradient-content-card.svelte';
 </script>
 
 <ContentSection
