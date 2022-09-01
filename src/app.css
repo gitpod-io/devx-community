@@ -89,13 +89,19 @@
 	}
 
 	body {
-		@apply bg-bg text-body;
+		@apply bg-bg;
 		text-rendering: optimizeLegibility;
+	}
+
+	main {
+		@apply text-body;
 	}
 
 	h1,
 	h2,
-	h3 {
+	h3,
+	h4,
+	h5 {
 		@apply font-bold text-important;
 	}
 }
@@ -107,6 +113,10 @@
 
 	.h3 {
 		@apply text-h3 leading-[2.391rem] tracking-[0.15em];
+	}
+
+	.h4 {
+		@apply text-base;
 	}
 
 	.bottom-lined::after {
