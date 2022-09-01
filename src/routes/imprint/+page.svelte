@@ -1,1 +1,1 @@
-<h1 class="mb-x-large text-center text-h2">Imprint</h1>
+<h1 class="h2 mb-x-large text-center">Imprint</h1>

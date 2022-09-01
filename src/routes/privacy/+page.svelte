@@ -1,1 +1,1 @@
-<h1 class="mb-x-large text-center text-h2">Privacy Policy</h1>
+<h1 class="h2 mb-x-large text-center">Privacy Policy</h1>
