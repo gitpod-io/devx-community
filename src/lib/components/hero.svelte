@@ -11,14 +11,14 @@
 				dots.forEach((dot) => {
 					dot.style.transform = 'none';
 				});
-			}, 100);
+			}, 200);
 		}
 
 		if (title) {
 			setTimeout(() => {
-				title.style.opacity = '1';
 				title.style.transform = 'none';
-			}, 3000);
+				title.style.opacity = '1';
+			}, 2000);
 		}
 	});
 </script>
@@ -37,7 +37,7 @@
 
 <style lang="postcss">
 	.dots > :global(*) {
-		transition: transform 3s cubic-bezier(1, 0, 0.15, 1);
+		transition: transform 2.5s cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
 	.dots > :global(*:first-child) {
@@ -57,8 +57,8 @@
 	}
 
 	.h3 {
-		@apply opacity-0;
-		transform: scale(0.7);
-		transition: all 2s;
+		transform: translateY(50%);
+		opacity: 0;
+		transition: all 1.5s;
 	}
 </style>
