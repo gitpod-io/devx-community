@@ -18,7 +18,7 @@
 			setTimeout(() => {
 				title.style.transform = 'none';
 				title.style.opacity = '1';
-			}, 2000);
+			}, 1000);
 		}
 	});
 </script>
