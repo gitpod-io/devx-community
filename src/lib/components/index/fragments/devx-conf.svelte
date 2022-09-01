@@ -4,6 +4,7 @@
 </script>
 
 <ContentSection
+	id="devx-conf"
 	title="DevX Conf"
 	annotation="watch"
 	iconalt="youtube icon"

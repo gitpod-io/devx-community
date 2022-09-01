@@ -4,6 +4,7 @@
 </script>
 
 <ContentSection
+	id="devx-pod"
 	title="DevX Pod"
 	annotation="listen"
 	iconalt="earphone icon"
