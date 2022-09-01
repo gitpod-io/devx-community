@@ -15,7 +15,8 @@ const config = {
 				important: 'var(--important)',
 				body: 'var(--body)',
 				sub: 'var(--sub)',
-				bg: 'var(--bg)'
+				bg: 'var(--bg)',
+				box: 'var(--box)'
 			},
 			boxShadow: {
 				'hover-default': 'var(--shadow-hover-default)'

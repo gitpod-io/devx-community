@@ -4,11 +4,23 @@
 
 @font-face {
 	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
 	src: url('/fonts/Manrope-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Manrope';
+	font-style: bold;
+	font-weight: 600;
+	font-display: swap;
+	src: url('./fonts/Manrope-Bold.woff2') format('woff2');
 }
 
 @layer base {
 	:root {
+		--dark-black: #070707;
 		--black: #161616;
 		--grey: #5d5959;
 		--grey-light: #bfbfbf;
@@ -20,7 +32,6 @@
 		--white-light: #fdfbfb;
 
 		--highlight: var(--red);
-		--box: var(--white);
 
 		--xx-large: 10rem;
 		--x-large: 4.5rem;
@@ -46,6 +57,7 @@
 		--body: var(--grey);
 		--sub: var(--brown-light);
 		--bg: var(--grey-slight);
+		--box: var(--white);
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #cdc0b2 79.06%);
 		--gradient-stroke: linear-gradient(180deg, #ffffff 0%, #ece7e5 100%);
@@ -56,6 +68,7 @@
 		--body: var(--grey-light);
 		--sub: var(--brown-dark);
 		--bg: var(--black);
+		--box: var(--dark-black);
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #64584a 79.06%);
 		--gradient-stroke: linear-gradient(179.95deg, #332d23 0.04%, #0f0e0b 99.8%);
@@ -68,6 +81,7 @@
 		box-sizing: inherit;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 	}
 
 	html {
