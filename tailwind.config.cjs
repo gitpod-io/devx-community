@@ -34,7 +34,8 @@ const config = {
 				large: 'var(--large)',
 				medium: 'var(--medium)',
 				small: 'var(--small)',
-				'x-small': 'var(--x-small)'
+				'x-small': 'var(--x-small)',
+				'xx-small': 'var(--xx-small)'
 			},
 			fontFamily: {
 				sans: ['Manrope', ...defaultTheme.fontFamily.sans]
