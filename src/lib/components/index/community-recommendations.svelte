@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Section from '../library/section.svelte';
-	import { blogRecommendations } from '$lib/contents/index/recommendations';
+	import {
+		blogRecommendations,
+		knowledgeBases,
+		podcasts
+	} from '$lib/contents/index/recommendations';
 	import RecommendationItemSection from '../library/recommendation-item-section.svelte';
 	import AnimatedLine from '../library/animated-line.svelte';
 </script>
@@ -13,8 +17,8 @@
 />
 <div class="grid max-w-4xl grid-cols-1 gap-small pt-x-large md:grid-cols-3">
 	<RecommendationItemSection title="Blogs" recommendationItems={blogRecommendations} />
-	<RecommendationItemSection title="Podcasts" recommendationItems={blogRecommendations} />
-	<RecommendationItemSection title="Knowledge Bases" recommendationItems={blogRecommendations} />
+	<RecommendationItemSection title="Podcasts" recommendationItems={podcasts} />
+	<RecommendationItemSection title="Knowledge Bases" recommendationItems={knowledgeBases} />
 </div>
 
 <AnimatedLine />
