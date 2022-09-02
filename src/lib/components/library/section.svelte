@@ -13,7 +13,7 @@
 
 <section class="pt-medium {clazz}">
 	<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
-	<p class="mx-auto {textClassNames}">{@html text}</p>
+	{#if text}<p class="mx-auto {textClassNames}">{@html text}</p>{/if}
 	<slot />
 	{#if line}
 		<AnimatedLine />

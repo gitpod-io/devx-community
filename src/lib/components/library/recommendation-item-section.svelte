@@ -2,12 +2,16 @@
 	import type { RecommendationItem } from '$lib/types/recommendation-item.type';
 
 	export let recommendationItems: RecommendationItem[];
+	export let title: string;
 </script>
 
-<ul class="list-inside list-disc space-y-2">
-	{#each recommendationItems as item}
-		<li>
-			<a href={item.href}>{item.text}</a> by {item.author}
-		</li>
-	{/each}
-</ul>
+<div>
+	<h3 class="pb-x-small text-center text-h3">{title}</h3>
+	<ul class="list-inside list-disc space-y-2 sm:list-outside">
+		{#each recommendationItems as item}
+			<li>
+				<a href={item.href}>{item.text}</a> by {item.author}
+			</li>
+		{/each}
+	</ul>
+</div>

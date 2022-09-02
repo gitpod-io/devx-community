@@ -6,7 +6,8 @@
 	import LearnMore from '$lib/components/index/learn-more.svelte';
 	import WhatIsThisCommunity from '$lib/components/index/what-is-this-community.svelte';
 	import Section from '$lib/components/library/section.svelte';
-	import DeveloperExperience from '$lib/components/developer-experience.svelte';
+	import DeveloperExperience from '$lib/components/index/developer-experience.svelte';
+	import ExchangeIdeas from '$lib/components/index/exchange-ideas.svelte';
 </script>
 
 <Hero />
@@ -17,8 +18,10 @@
 
 <LearnMore />
 
+<ExchangeIdeas />
+
 <CommunityRecommendations />
 
 <FoundingMembers />
 
-<Section title="Join now" />
+<Section line={false} title="Join now" />
