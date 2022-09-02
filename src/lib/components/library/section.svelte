@@ -1,5 +1,6 @@
 <script lang="ts">
 	import AnimatedLine from './animated-line.svelte';
+	import TextReveal from './text-reveal.svelte';
 
 	export let title: string;
 	export let text = '';
@@ -12,8 +13,10 @@
 </script>
 
 <section class="pt-medium {clazz}">
-	<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
-	<p class="mx-auto {textClassNames}">{@html text}</p>
+	<TextReveal>
+		<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
+		<p class="mx-auto {textClassNames}">{@html text}</p>
+	</TextReveal>
 	<slot />
 	{#if line}
 		<AnimatedLine />

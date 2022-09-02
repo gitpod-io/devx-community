@@ -14,7 +14,6 @@
 					entries.forEach((entry) => {
 						if (entry.isIntersecting) {
 							target?.classList.add('visible');
-							console.log('is in viewport.', target);
 							observer.disconnect();
 						}
 					});
