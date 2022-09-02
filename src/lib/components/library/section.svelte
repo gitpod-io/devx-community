@@ -5,8 +5,9 @@
 	export let title: string;
 	export let text = '';
 	export let textClassNames = '';
-	export let titleClassNames = 'pb-large';
+	export let titleClassNames = '';
 	export let isRevealDisabled = false;
+	export let revealClassNames = '';
 	export let line = true;
 
 	let clazz = '';
@@ -14,10 +15,9 @@
 </script>
 
 <section class="pt-medium {clazz}">
-	<Reveal disabled={isRevealDisabled}>
-		<h2 class="h2 text-center {titleClassNames}">{title}</h2>
+	<Reveal disabled={isRevealDisabled} class={revealClassNames}>
+		<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
 		<p class="mx-auto {textClassNames}">{@html text}</p>
-		<slot name="top" />
 		<slot />
 	</Reveal>
 	{#if line}
