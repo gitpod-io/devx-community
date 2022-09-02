@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ContentSection from '../../library/content-section.svelte';
-	// import GradientContentCard from '../../library/gradient-content-card.svelte';
+	import GradientContentCard from '../../library/gradient-content-card.svelte';
+	import { devXPod } from '$lib/contents/index/devx-content';
 </script>
 
 <ContentSection
@@ -17,9 +18,9 @@
 	<div>
 		<h4 class="h4 pt-large">Highlighted Episodes</h4>
 		<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-			<!-- <GradientContentCard />
-			<GradientContentCard />
-			<GradientContentCard /> -->
+			{#each devXPod as item}
+				<GradientContentCard data={item} />
+			{/each}
 		</div>
 	</div>
 </ContentSection>
