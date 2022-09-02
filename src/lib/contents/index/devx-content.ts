@@ -47,6 +47,16 @@ export const devXBlog: GradientContentCard[] = [
 		label: 'Read now',
 		text: 'Building a developer experience team',
 		href: 'https://www.gitpod.io/blog/building-devx-teams'
+	},
+	{
+		label: 'Read now',
+		text: 'How DevX affects us all',
+		href: 'https://www.gitpod.io/blog/devx-affects-us-all'
+	},
+	{
+		label: 'Read now',
+		text: 'The rise of ephemeral dev environments',
+		href: 'https://www.gitpod.io/blog/ephemeral-dev-envs'
 	}
 ];
 
