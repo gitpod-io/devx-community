@@ -107,6 +107,10 @@
 		@apply text-[1.75rem] leading-[1.5rem] md:leading-[2rem];
 	}
 
+	.h5 {
+		@apply text-p-medium tracking-[0.15em];
+	}
+
 	.text-large {
 		@apply text-p-x-large leading-[33.6px];
 	}

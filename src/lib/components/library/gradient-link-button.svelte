@@ -8,7 +8,7 @@
 	{target}
 	{href}
 	{rel}
-	class="gradient-border tracking[0.2em] rounded-[40px] border-[2.5px] border-double border-transparent px-8 py-4 text-inter text-explicit-white-light no-underline transition-all delay-50 duration-200 hover:shadow-hover-default"
+	class="gradient-border tracking[0.2em] h5 rounded-[40px] border-[2.5px] border-double border-transparent px-8 py-4 font-bold text-explicit-white-light no-underline transition-all delay-50 duration-200 hover:shadow-hover-default"
 >
 	<slot />
 </a>
