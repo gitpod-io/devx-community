@@ -13,7 +13,7 @@
 	class="flex flex-col items-center"
 >
 	<div class="max-w-xl pb-xx-large">
-		<ul class="flex gap-large">
+		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
 			<li>
 				<a class="flex items-center gap-1" href="#devx-blog">
 					<img src="/icons/read.svg" alt="shelf icon" />
