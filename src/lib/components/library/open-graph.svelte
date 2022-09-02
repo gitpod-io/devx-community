@@ -6,7 +6,7 @@
 	const type = 'website';
 	const {
 		description,
-		image = 'images/media-image.jpg',
+		image = '/media-image.jpg',
 		title,
 		keywords = '',
 		norobots = false
@@ -25,7 +25,7 @@
 	{/if}
 
 	<!-- https://ogp.me -->
-	<meta property="og:image" content="https://www.developerexperience.us/{image}" />
+	<meta property="og:image" content="https://www.developerexperience.us{image}" />
 	<meta property="og:description" content={description} />
 	<meta property="og:title" content={title} />
 	<meta property="og:type" content={type} />
