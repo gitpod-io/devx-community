@@ -12,7 +12,7 @@
 	textClassNames="max-w-xl mx-auto pb-large"
 	class="flex flex-col items-center"
 >
-	<div class="mx-auto max-w-xl pb-xx-large">
+	<div class="mx-auto max-w-xl pb-xx-large" slot="top">
 		<ul class="flex gap-large">
 			<li>
 				<a class="flex items-center gap-1" href="#devx-blog">

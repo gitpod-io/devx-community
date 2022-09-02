@@ -17,6 +17,7 @@
 	<Reveal disabled={isRevealDisabled}>
 		<h2 class="h2 pb-large text-center {titleClassNames}">{title}</h2>
 		<p class="mx-auto {textClassNames}">{@html text}</p>
+		<slot name="top" />
 	</Reveal>
 	<Reveal disabled={isRevealDisabled}>
 		<slot />
