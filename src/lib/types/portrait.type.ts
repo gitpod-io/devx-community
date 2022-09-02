@@ -5,4 +5,5 @@ export type Portrait = {
 	role: string;
 	githubLink?: string;
 	twitterLink?: string;
+	linkedinLink?: string;
 };

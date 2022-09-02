@@ -3,6 +3,7 @@
 
 	import Github from '../svgs/github.svelte';
 	import Twitter from '../svgs/twitter.svelte';
+	import Linkedin from '../svgs/linkedin.svelte';
 
 	export let portrait: Portrait;
 </script>
@@ -25,6 +26,8 @@
 		<div class="mt-4 flex justify-center gap-[0.75rem]">
 			{#if portrait.githubLink}<a target="_blank" href={portrait.githubLink}> <Github /></a>{/if}
 			{#if portrait.twitterLink}<a target="_blank" href={portrait.twitterLink}><Twitter /></a>{/if}
+			{#if portrait.linkedinLink}<a target="_blank" href={portrait.linkedinLink}><Linkedin /></a
+				>{/if}
 		</div>
 	</div>
 </div>
