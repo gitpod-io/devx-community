@@ -7,7 +7,7 @@
 
 <Section
 	line={false}
-	title="Community recommendations"
+	title="Community Recommendations"
 	titleClassNames="max-w-6xl !pb-x-large"
 	class="mx-auto max-w-xl"
 />

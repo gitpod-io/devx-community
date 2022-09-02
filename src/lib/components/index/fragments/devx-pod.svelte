@@ -16,8 +16,8 @@
 		speak with developer experience leaders to unpack the ins-and-outs of the field.
 	</p>
 	<div>
-		<h4 class="h4 pt-large">Highlighted Episodes</h4>
-		<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+		<h4 class="pt-large text-base">Highlighted Episodes</h4>
+		<div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each devXPod as item}
 				<GradientContentCard data={item} />
 			{/each}

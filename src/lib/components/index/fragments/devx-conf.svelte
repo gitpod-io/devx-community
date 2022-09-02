@@ -16,8 +16,8 @@
 		practitioners at leading companies discuss their best tools, processes, and latest learnings.
 	</p>
 	<div>
-		<h4 class="h4 pt-large">Highlighted Talks</h4>
-		<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+		<h4 class="pt-large text-base">Highlighted Talks</h4>
+		<div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-2">
 			{#each devXConf as item}
 				<GradientContentCard data={item} />
 			{/each}

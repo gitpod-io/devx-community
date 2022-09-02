@@ -5,7 +5,9 @@
 </script>
 
 <div class="mt-auto bg-box">
-	<footer class="m-auto px-4 py-large text-body md:max-w-6xl md:px-x-small md:py-small">
+	<footer
+		class="m-auto px-4 py-large text-base text-body md:max-w-6xl md:px-x-small md:py-small md:text-main"
+	>
 		<div class="flex justify-around">
 			<div class="flex max-w-[200px] flex-col gap-x-small">
 				<div>DevX - Bring back joy and speed to our workflows</div>

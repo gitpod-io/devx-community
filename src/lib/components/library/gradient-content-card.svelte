@@ -9,7 +9,7 @@
 <GradientCard href={data.href}>
 	<div class="flex h-full flex-col justify-between">
 		<div class="mb-x-small">
-			<h5 class:mb-4={data.subtext} class="h4">{data.text}</h5>
+			<h5 class:mb-4={data.subtext} class="text-base">{data.text}</h5>
 			{#if data.subtext}
 				<span class="text-xs">{data.subtext}</span>
 			{/if}
