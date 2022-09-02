@@ -24,7 +24,9 @@
 		}
 
 		window.addEventListener('scroll', () => {
-			isLineVisible = true;
+			setTimeout(() => {
+				isLineVisible = true;
+			}, 500);
 		});
 	});
 </script>
