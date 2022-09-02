@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import AnimatedLine from '../library/animated-line.svelte';
 	import Dot from '../library/dot.svelte';
+	let isLineVisible = false;
 
 	onMount(() => {
 		const dots = document.querySelectorAll<HTMLElement>('.dots div');
@@ -20,10 +22,14 @@
 				title.style.opacity = '1';
 			}, 1000);
 		}
+
+		window.addEventListener('scroll', () => {
+			isLineVisible = true;
+		});
 	});
 </script>
 
-<header class="bottom-lined relative">
+<header class="relative">
 	<div class="dots mx-auto grid max-w-[208px] grid-cols-2 gap-4 lg:max-w-[310px]">
 		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
 		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
@@ -33,6 +39,7 @@
 	<h1 class="h3 mx-auto mt-x-large max-w-[410px] text-center">
 		Bring back joy and speed to our workflows
 	</h1>
+	<AnimatedLine disableObserver={true} visible={isLineVisible} />
 </header>
 
 <style lang="postcss">

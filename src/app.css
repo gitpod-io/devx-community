@@ -107,13 +107,8 @@
 	.h4 {
 		@apply text-base;
 	}
-	
+
 	.text-large {
 		@apply text-p-x-large leading-[33.6px];
-	}
-
-	.bottom-lined::after {
-		content: '';
-		@apply mx-auto mt-large block h-32 w-[3px] bg-sub;
 	}
 }
