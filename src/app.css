@@ -74,14 +74,13 @@
 	}
 
 	body {
-		@apply bg-bg;
+		@apply bg-bg text-base text-body md:text-main;
 		text-rendering: optimizeLegibility;
 	}
 
 	main {
-		@apply text-body;
+		@apply text-base text-body md:text-main;
 	}
-
 	h1,
 	h2,
 	h3,
@@ -97,15 +96,19 @@
 
 @layer components {
 	.h2 {
-		@apply text-h2 leading-[3.375rem];
+		@apply text-[2rem] leading-[2.5rem] md:text-h2 md:leading-[3.375rem];
 	}
 
 	.h3 {
-		@apply text-h3 leading-[2.391rem] tracking-[0.15em];
+		@apply text-p-x-large leading-[2rem] tracking-[0.15em] md:text-h3 md:leading-[2.391rem];
 	}
 
 	.h4 {
-		@apply text-base;
+		@apply text-[1.75rem] leading-[1.5rem] md:leading-[2rem];
+	}
+
+	.h5 {
+		@apply text-p-medium tracking-[0.15em];
 	}
 
 	.text-large {

@@ -16,7 +16,7 @@
 		isRevealDisabled={true}
 		revealClassNames="relative sm:static"
 	>
-		<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9" class="mt-6">
+		<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9">
 			Join the community
 		</GradientLinkButton>
 		<Dot

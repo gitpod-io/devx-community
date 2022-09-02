@@ -58,7 +58,7 @@ const config = {
 						letterSpacing: '0.2em'
 					}
 				],
-				body: ['18px', { lineHeight: '1.688rem' }]
+				main: ['18px', { lineHeight: '1.688rem' }]
 			}
 		}
 	},

@@ -9,7 +9,7 @@
 	{target}
 	{href}
 	{rel}
-	class="gradient-border block h-full rounded-2xl border-[2.5px] border-double border-transparent px-3 py-6 transition-all delay-50 duration-200 hover:shadow-hover-default"
+	class="gradient-border block h-full rounded-2xl border-[2.5px] border-double border-transparent px-3 py-6 no-underline transition-all delay-50 duration-200 hover:border-4 hover:shadow-hover-default"
 >
 	<slot />
 </a>

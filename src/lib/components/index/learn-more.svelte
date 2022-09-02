@@ -12,8 +12,8 @@
 	textClassNames="max-w-xl mx-auto pb-large"
 	class="flex flex-col items-center"
 >
-	<div class="mx-auto max-w-xl pb-xx-large" slot="top">
-		<ul class="flex gap-large">
+	<div class="mx-auto max-w-xl pb-xx-large">
+		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
 			<li>
 				<a class="flex items-center gap-1" href="#devx-blog">
 					<img src="/icons/read.svg" alt="shelf icon" />

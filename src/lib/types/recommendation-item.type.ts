@@ -1,5 +1,5 @@
 export type RecommendationItem = {
 	href: string;
-	author: string;
+	by: string;
 	text: string;
 };
