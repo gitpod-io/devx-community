@@ -15,7 +15,7 @@
 	titleClassNames="max-w-6xl !pb-x-large"
 	class="mx-auto max-w-xl"
 />
-<div class="grid max-w-4xl grid-cols-1 gap-small pt-x-large md:grid-cols-3">
+<div class="mx-auto grid max-w-4xl grid-cols-1 gap-small pt-x-large md:grid-cols-3">
 	<RecommendationItemSection title="Blogs" recommendationItems={blogRecommendations} />
 	<RecommendationItemSection title="Podcasts" recommendationItems={podcasts} />
 	<RecommendationItemSection title="Knowledge Bases" recommendationItems={knowledgeBases} />

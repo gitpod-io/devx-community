@@ -3,6 +3,6 @@
 </script>
 
 <div>
-	<h4 class="h4">{title}</h4>
+	<h4 class="text-base font-bold">{title}</h4>
 	<slot />
 </div>
