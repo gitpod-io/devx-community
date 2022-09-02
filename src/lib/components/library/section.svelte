@@ -4,7 +4,7 @@
 	export let title: string;
 	export let text = '';
 	export let textClassNames = '';
-	export let titleClassNames = '';
+	export let titleClassNames = 'pb-large';
 	export let line = true;
 
 	let clazz = '';
