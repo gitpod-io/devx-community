@@ -36,7 +36,7 @@
 			</div>
 		</Container>
 	</FullBleed>
-	<p class="mx-auto max-w-lg pt-x-large">
+	<p class="mx-auto max-w-xl pt-x-large">
 		There is light at the end of the tunnel.
 		<br />
 		<br />
