@@ -7,6 +7,7 @@ const config = {
 		extend: {
 			colors: {
 				explicit: {
+					white: 'var(--white)',
 					black: 'var(--black)',
 					'white-light': 'var(--white-light)',
 					'grey-slight': 'var(--grey-slight)'
