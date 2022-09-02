@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { nanoid } from 'nanoid';
 
-	const id = `text-reveal-${nanoid()}`;
+	const id = `reveal-${nanoid()}`;
 
 	onMount(() => {
 		const target = document.querySelector(`#${id}`);
