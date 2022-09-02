@@ -12,8 +12,8 @@
 	iconsrc="/icons/watch.svg"
 >
 	<p slot="text" class="pt-x-small text-justify">
-		DevX Conf is a space for creators where we can start from first principles, collaborate, listen,
-		discuss and declutter our workflows, toolchains and minds.
+		DevX Conf is a virtual conference on developer experience that happens every year. DevX
+		practitioners at leading companies discuss their best tools, processes, and latest learnings.
 	</p>
 	<div>
 		<h4 class="h4 pt-large">Highlighted Talks</h4>

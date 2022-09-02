@@ -10,7 +10,7 @@
 	<ul class="list-inside list-disc space-y-2 sm:list-outside">
 		{#each recommendationItems as item}
 			<li>
-				<a href={item.href}>{item.text}</a> by {item.author}
+				<a href={item.href}>{item.text}</a> by {item.by}
 			</li>
 		{/each}
 	</ul>

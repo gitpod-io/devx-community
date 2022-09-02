@@ -3,12 +3,12 @@ import type { RecommendationItem } from '$lib/types/recommendation-item.type';
 export const blogRecommendations: RecommendationItem[] = [
 	{
 		href: '#',
-		author: 'Kenneth Auchenberg',
+		by: 'Kenneth Auchenberg',
 		text: 'Developer Experience Infrastructure (DXI)'
 	},
 	{
 		href: '#',
-		author: 'Cirpo',
+		by: 'Cirpo',
 		text: 'Developer Experience (DX) at DAZN'
 	}
 ];

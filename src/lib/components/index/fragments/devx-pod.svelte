@@ -12,8 +12,8 @@
 	iconsrc="/icons/listen.svg"
 >
 	<p slot="text" class="pt-x-small text-justify">
-		Join Chris Weichel and Pauline Narvas with special guests as they deep dive into the
-		ins-and-outs of developer experience.
+		DevX Pod feature in-depth interviews with DevX experts. Hosts Pauline Narvas and Chris Weichel
+		speak with developer experience leaders to unpack the ins-and-outs of the field.
 	</p>
 	<div>
 		<h4 class="h4 pt-large">Highlighted Episodes</h4>

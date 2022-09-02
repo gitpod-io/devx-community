@@ -20,7 +20,7 @@
 			While choice is great, it doesn't necessarily make our lives easier. How does that feel?
 		</p>
 	</div>
-	<FullBleed class="mt-x-large w-screen bg-box py-x-large">
+	<FullBleed class="w-screen bg-box py-x-large">
 		<Container>
 			<div class="mx-auto max-w-xl">
 				<div class="mt-x-small grid grid-cols-2 gap-1" style="max-width: {2 * 18 + 4}px;">
@@ -36,4 +36,19 @@
 			</div>
 		</Container>
 	</FullBleed>
+	<p class="mx-auto max-w-lg pt-x-large">
+		There is light at the end of the tunnel.
+		<br />
+		<br />
+		Individual developers, teams and projects start to think deeply about design, style and taste for
+		tools to help us get into a flow focused on what we all love most: being creative and writing elegant
+		code.
+		<br />
+		<br />
+		What all of them have in common is the desire to delight, the desire to reduce friction, and the
+		desire to leverage automation to create a Swiss clockwork that works reliably below the surface.
+		<br />
+		<br />
+		This community is for them.
+	</p>
 </Section>
