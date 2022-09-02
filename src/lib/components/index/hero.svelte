@@ -67,7 +67,6 @@
 
 	.h3 {
 		transform: translateY(50%);
-		opacity: 0;
-		transition: all 1.5s;
+		@apply translate-y-1/2 opacity-0 transition-all duration-[1500ms];
 	}
 </style>
