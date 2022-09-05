@@ -6,6 +6,7 @@
 	import { iconLinks } from '$lib/contents/index/learn-more';
 	import IconLink from '../library/icon-link.svelte';
 	import GradientLinkButton from '../library/gradient-link-button.svelte';
+	import Dot from '../library/dot.svelte';
 </script>
 
 <Section
@@ -26,6 +27,9 @@
 	</div>
 	<div>
 		<DevxBlog />
+		<div class="flex justify-center pb-large">
+			<Dot class="h-[120px] w-[120px]" />
+		</div>
 		<DevxConf />
 		<DevxPod />
 
