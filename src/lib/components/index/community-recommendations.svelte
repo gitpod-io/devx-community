@@ -9,7 +9,7 @@
 </script>
 
 <Section title="Community Recommendations" titleClassNames="max-w-6xl" class="mx-auto">
-	<div class="mx-auto flex max-w-5xl flex-wrap justify-center gap-medium">
+	<div class="mx-auto flex max-w-5xl flex-wrap justify-center gap-x-small md:gap-medium">
 		<RecommendationItemSection title="Blogs" recommendationItems={blogRecommendations} />
 		<RecommendationItemSection title="Podcasts" recommendationItems={podcasts} />
 		<RecommendationItemSection title="Knowledge Bases" recommendationItems={knowledgeBases} />

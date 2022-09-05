@@ -32,13 +32,13 @@
 </script>
 
 <header class="relative">
-	<div class="dots mx-auto grid max-w-[208px] grid-cols-2 gap-4 lg:max-w-[310px]">
-		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
-		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
-		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
-		<Dot class="h-24 w-24 lg:h-36 lg:w-36" />
+	<div class="dots mx-auto grid max-w-[176px] grid-cols-2 gap-4 sm:max-w-[208px] lg:max-w-[310px]">
+		<Dot class="h-20 w-20 sm:h-24 sm:w-24 lg:h-36 lg:w-36" />
+		<Dot class="h-20 w-20 sm:h-24 sm:w-24 lg:h-36 lg:w-36" />
+		<Dot class="h-20 w-20 sm:h-24 sm:w-24 lg:h-36 lg:w-36" />
+		<Dot class="h-20 w-20 sm:h-24 sm:w-24 lg:h-36 lg:w-36" />
 	</div>
-	<h1 class="h3 mx-auto mt-small max-w-[510px] text-center">
+	<h1 class="h3 mx-auto mt-x-small max-w-[510px] text-center md:mt-small">
 		A dedicated space<br />for developer experience
 	</h1>
 	<AnimatedLine disableObserver={true} visible={isLineVisible} />

@@ -98,6 +98,10 @@
 		@apply font-bold text-important;
 	}
 
+	p + p {
+		@apply mt-xx-small md:mt-x-small;
+	}
+
 	a {
 		@apply underline transition-all delay-50 duration-200 hover:decoration-transparent;
 	}

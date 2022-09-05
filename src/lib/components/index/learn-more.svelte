@@ -12,12 +12,12 @@
 	title="Learn more about developer experience"
 	text="We are creating a multi-media knowledge base to help demystify the world of developer experience. Start here!"
 	titleClassNames="max-w-4xl mx-auto"
-	textClassNames="max-w-xl mx-auto pb-small"
+	textClassNames="max-w-xl mx-auto pb-x-small md:pb-small"
 	class="flex flex-col items-center"
 >
 	<div class="space-y-x-large md:space-y-xx-large">
 		<div class="mx-auto max-w-xl">
-			<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
+			<ul class="grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-large">
 				{#each iconLinks as link}
 					<li class="flex items-center justify-center">
 						<IconLink iconLink={link} />

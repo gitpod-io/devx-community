@@ -9,7 +9,7 @@
 	<Section
 		title="Apply now"
 		text="Do you have valuable knowledge to share and are driven to create better experiences for developers?"
-		class="relative mx-auto mb-xx-large mt-44 flex h-auto w-auto items-center justify-center pt-0 text-center sm:mt-x-large sm:h-[450px] sm:w-[450px] md:h-[649px] md:w-[649px]"
+		class="relative mx-auto flex h-auto w-auto items-center justify-center text-center sm:mt-x-large sm:h-[450px] sm:w-[450px] md:mb-xx-large md:mt-44 md:h-[649px] md:w-[649px] md:pt-0"
 		titleClassNames="pb-6"
 		textClassNames="text-important max-w-md pb-6"
 		line={false}
