@@ -5,9 +5,6 @@
 	import DevxConf from './fragments/devx-conf.svelte';
 	import { iconLinks } from '$lib/contents/index/learn-more';
 	import IconLink from '../library/icon-link.svelte';
-	import Watch from '../svgs/watch.svelte';
-	import Listen from '../svgs/listen.svelte';
-	import Read from '../svgs/read.svelte';
 </script>
 
 <Section
@@ -19,23 +16,11 @@
 >
 	<div class="mx-auto max-w-xl pb-xx-large">
 		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
-			<li>
-				<a class="flex items-center justify-center gap-1" href="#devx-blog">
-					<Read class="h-[18px] w-[18px]" />
-					DevX Blog</a
-				>
-			</li>
-			<li>
-				<a class="flex items-center justify-center gap-1" href="#devx-conf">
-					<Watch class="h-[14px] w-[20px]" /> DevX Conf</a
-				>
-			</li>
-			<li>
-				<a class="flex items-center justify-center gap-1" href="#devx-pod">
-					<Listen class="h-[20px] w-[18px] border-none" />
-					DevX Pod</a
-				>
-			</li>
+			{#each iconLinks as link}
+				<li class="flex items-center justify-center">
+					<IconLink iconLink={link} />
+				</li>
+			{/each}
 		</ul>
 	</div>
 
