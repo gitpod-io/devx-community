@@ -13,7 +13,7 @@
 			const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 			if (theme === null) {
-				localStorage.setItem('theme', 'system');
+				localStorage.setItem('theme', 'light');
 				if (darkMediaQuery.matches) {
 					document.body.classList.add('dark');
 				} else {
@@ -31,14 +31,6 @@
 
 			darkMediaQuery.addEventListener('change', () => {
 				const storedTheme = localStorage.getItem('theme');
-				if (storedTheme === 'system') {
-					console.log('Called.');
-					if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-						document.body.classList.replace('light', 'dark');
-					} else {
-						document.body.classList.replace('dark', 'light');
-					}
-				}
 			});
 		</script>
 		<div>%sveltekit.body%</div>

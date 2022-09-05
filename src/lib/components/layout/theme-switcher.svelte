@@ -7,8 +7,8 @@
 
 	onMount(() => {
 		let storedTheme = localStorage.getItem('theme');
-		if (storedTheme === null || storedTheme === 'system') {
-			theme = 'system';
+		if (storedTheme === null) {
+			theme = 'light';
 		} else if (storedTheme === 'dark') {
 			theme = 'dark';
 		} else {

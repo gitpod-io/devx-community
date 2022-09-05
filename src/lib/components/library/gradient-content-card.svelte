@@ -1,15 +1,16 @@
 <script lang="ts">
 	import type { GradientContentCard } from '$lib/types/gradient-content-card.type';
-
+	let className = '';
+	export { className as class };
 	export let data: GradientContentCard;
 	import GradientCard from './gradient-card.svelte';
 	import LinkButton from './link-button.svelte';
 </script>
 
-<GradientCard href={data.href}>
+<GradientCard class={className} href={data.href}>
 	<div class="flex h-full flex-col justify-between">
-		<div class="mb-x-small">
-			<h5 class:mb-4={data.subtext} class="text-base">{data.text}</h5>
+		<div class="">
+			<h5 class="text-base">{data.text}</h5>
 			{#if data.subtext}
 				<span class="text-xs">{data.subtext}</span>
 			{/if}
