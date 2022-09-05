@@ -7,7 +7,7 @@
 </script>
 
 <Section title="What is developer experience?" class="relative" titleClassNames="pb-0">
-	<div class="mx-auto max-w-xl pb-x-large">
+	<div class="mx-auto max-w-xl pb-large">
 		<h3 class="pb-xx-small text-h3 text-important">Community Manifesto</h3>
 		<p>
 			Developer experience - our daily experience when trying to get the job done. All of that
@@ -20,10 +20,10 @@
 			While choice is great, it doesn't necessarily make our lives easier. How does that feel?
 		</p>
 	</div>
-	<FullBleed class="w-screen bg-box py-large">
+	<FullBleed class="w-screen bg-box pt-large">
 		<Container>
 			<div class="mx-auto max-w-xl">
-				<div class="mt-x-small grid grid-cols-2 gap-1" style="max-width: {2 * 18 + 4}px;">
+				<div class="grid grid-cols-2 gap-1" style="max-width: {2 * 18 + 4}px;">
 					{#each Array(4) as _}
 						<Dot class="h-[18px] w-[18px]" />
 					{/each}

@@ -12,7 +12,7 @@
 	title="Learn more about developer experience"
 	text="We are creating a multi-media knowledge base to help demystify the world of developer experience. Start here!"
 	titleClassNames="max-w-4xl mx-auto"
-	textClassNames="max-w-xl mx-auto pb-medium"
+	textClassNames="max-w-xl mx-auto pb-small"
 	class="flex flex-col items-center"
 >
 	<div class="space-y-x-large md:space-y-xx-large">
