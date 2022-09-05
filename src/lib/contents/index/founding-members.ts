@@ -9,13 +9,7 @@ export const foundingMembers: Portrait[] = [
 		linkedinLink: 'https://www.linkedin.com/in/cirpo/',
 		twitterLink: 'https://twitter.com/cirpo'
 	},
-	{
-		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
-		name: 'Elvis',
-		company: '@Warp',
-		role: 'DevX Engineer',
-		linkedinLink: 'https://www.linkedin.com/in/elviskahoro/'
-	},
+
 	{
 		imgsrc: 'images/portraits/abi_noda.png',
 		name: 'Abi Noda',
@@ -39,6 +33,13 @@ export const foundingMembers: Portrait[] = [
 		linkedinLink: 'https://www.linkedin.com/in/cctechwiz/',
 		role: 'Software Engineer',
 		twitterLink: 'https://twitter.com/cctechwiz'
+	},
+	{
+		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
+		name: 'Elvis Kahroo',
+		company: '@Warp',
+		role: 'DevX Engineer',
+		linkedinLink: 'https://www.linkedin.com/in/elviskahoro/'
 	},
 	{
 		imgsrc: '/images/portraits/phillip_carter.jpeg',
