@@ -3,35 +3,22 @@
 	import DevxBlog from './fragments/devx-blog.svelte';
 	import DevxPod from './fragments/devx-pod.svelte';
 	import DevxConf from './fragments/devx-conf.svelte';
+	import { iconLinks } from '$lib/contents/index/learn-more';
+	import IconLink from '../library/icon-link.svelte';
 </script>
 
 <Section
 	title="Learn more about developer experience"
 	text="We are creating a multi-media knowledge base to help demystify the world of developer experience. Start here!"
 	titleClassNames="max-w-4xl mx-auto"
-	textClassNames="max-w-xl mx-auto pb-large"
+	textClassNames="max-w-xl mx-auto pb-medium"
 	class="flex flex-col items-center"
 >
 	<div class="mx-auto max-w-xl pb-xx-large">
-		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
-			<li>
-				<a class="flex items-center gap-1" href="#devx-blog">
-					<img src="/icons/read.svg" alt="shelf icon" />
-					DevX Blog</a
-				>
-			</li>
-			<li>
-				<a class="flex items-center gap-1" href="#devx-conf">
-					<img src="/icons/watch.svg" alt="youtube icon" />
-					DevX Conf</a
-				>
-			</li>
-			<li>
-				<a class="flex items-center gap-1" href="#devx-pod">
-					<img src="/icons/listen.svg" alt="earphone icon" />
-					DevX Pod</a
-				>
-			</li>
+		<ul class="flex justify-center gap-x-large">
+			{#each iconLinks as iconLink}
+				<IconLink {iconLink} />
+			{/each}
 		</ul>
 	</div>
 

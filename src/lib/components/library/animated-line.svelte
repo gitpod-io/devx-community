@@ -28,7 +28,7 @@
 	});
 </script>
 
-<div class="relative mx-auto mt-large block h-32 w-[3px] overflow-hidden" class:visible {id} />
+<div class="relative mx-auto mt-x-large block h-32 w-[3px] overflow-hidden" class:visible {id} />
 
 <style lang="postcss">
 	div::after {
