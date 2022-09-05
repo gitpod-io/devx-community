@@ -9,10 +9,13 @@
 		class="m-auto px-4 py-large text-base text-body md:max-w-6xl md:px-x-small md:py-small md:text-main"
 	>
 		<div class="flex justify-around">
-			<div class="flex max-w-[200px] flex-col gap-x-small">
-				<div>DevX - a space dedicated to developer experience.</div>
-				<div>An initative organised by <a href="https://www.gitpod.io">Gitpod</a>.</div>
-
+			<div class="flex flex-col gap-x-small">
+				<p class="max-w-[220px]">DevX - a space dedicated to developer experience.</p>
+				<p>
+					An initative organised by Gitpod.
+					<br />
+					<a href="https://www.gitpod.io" target="_blank">gitpod.io</a>
+				</p>
 				<Gitpod />
 			</div>
 			<div class="flex w-full max-w-[200px] flex-col items-center gap-x-small">
