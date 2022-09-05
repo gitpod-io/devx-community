@@ -10,7 +10,7 @@
 	>
 		<div class="flex justify-around">
 			<div class="flex max-w-[200px] flex-col gap-x-small">
-				<div>DevX - Bring back joy and speed to our workflows</div>
+				<div>DevX - a space dedicated to developer experience.</div>
 				<div>An initative organised by <a href="https://www.gitpod.io">Gitpod</a>.</div>
 
 				<Gitpod />
