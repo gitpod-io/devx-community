@@ -27,7 +27,8 @@
 
 		--h1: 5rem;
 		--h2: 3rem;
-		--h3: 1.75rem;
+		--h3: 2rem;
+		--h4: 1.75rem;
 
 		--p-x-large: 1.5rem;
 		--p-large: 1.25rem;
@@ -81,11 +82,19 @@
 	main {
 		@apply text-base text-body md:text-main;
 	}
+
 	h1,
+	.h1,
 	h2,
+	.h2,
 	h3,
+	.h3,
 	h4,
-	h5 {
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
 		@apply font-bold text-important;
 	}
 
@@ -96,7 +105,7 @@
 
 @layer components {
 	.h2 {
-		@apply text-[2rem] leading-[2.5rem] md:text-h2 md:leading-[3.375rem];
+		@apply text-h3 leading-[2.5rem] md:text-h2 md:leading-[3.375rem];
 	}
 
 	.h3 {
@@ -104,11 +113,15 @@
 	}
 
 	.h4 {
-		@apply text-[1.75rem] leading-[1.5rem] md:leading-[2rem];
+		@apply text-p-large leading-[1.5rem] md:text-h4 md:leading-[2rem];
 	}
 
 	.h5 {
 		@apply text-p-medium tracking-[0.15em];
+	}
+
+	.h6 {
+		@apply mb-2 text-p-small leading-[20.8px];
 	}
 
 	.text-large {

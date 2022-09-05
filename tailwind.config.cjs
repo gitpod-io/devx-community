@@ -45,6 +45,7 @@ const config = {
 				h1: 'var(--h1)',
 				h2: 'var(--h2)',
 				h3: 'var(--h3)',
+				h4: 'var(--h4)',
 
 				'p-x-large': 'var(--p-x-large)',
 				'p-large': 'var(--p-large)',
