@@ -34,7 +34,7 @@
 
 <style lang="postcss">
 	div {
-		@apply translate-y-[200px] transform opacity-0 transition-all duration-[1500ms];
+		@apply translate-y-[100px] transform opacity-0 transition-all duration-[1500ms];
 		transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 	}
 
