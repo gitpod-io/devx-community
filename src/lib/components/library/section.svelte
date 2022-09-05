@@ -16,7 +16,7 @@
 
 <section class="pt-small md:pt-large {clazz}">
 	<Reveal disabled={isRevealDisabled} class={revealClassNames}>
-		<h2 class="h2  pb-small text-center md:pb-large {titleClassNames}">{title}</h2>
+		<h2 class="h2 pb-small text-center {titleClassNames}">{title}</h2>
 		{#if text}<p class="mx-auto {textClassNames}">{@html text}</p>{/if}
 		<slot />
 	</Reveal>
