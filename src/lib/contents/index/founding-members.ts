@@ -25,12 +25,12 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/abinoda'
 	},
 	{
-		imgsrc: 'https://amulett.at/wp-content/uploads/2018/10/portrait-square-05.jpg',
-		name: 'Brook Perry',
-		company: '@DX',
-		role: 'Marketing',
-		linkedinLink: 'https://www.linkedin.com/in/brookperry/',
-		twitterLink: 'https://twitter.com/brookprry'
+		imgsrc: '/images/portraits/pauline_narvas.png',
+		name: 'Pauline Narvas',
+		company: '@Gitpod',
+		role: 'Head of Community',
+		linkedinLink: 'https://www.linkedin.com/in/pnarvas/',
+		twitterLink: 'https://twitter.com/paulienuh'
 	},
 	{
 		imgsrc: '/images/portraits/josh_maxwell.jpeg',
