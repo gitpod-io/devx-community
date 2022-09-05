@@ -2,15 +2,10 @@
 	import ContentSection from '../../library/content-section.svelte';
 	import GradientContentCard from '../../library/gradient-content-card.svelte';
 	import { devXPod } from '$lib/contents/index/devx-content';
+	import Listen from '../../svgs/listen.svelte';
 </script>
 
-<ContentSection
-	id="devx-pod"
-	title="DevX Pod"
-	annotation="listen"
-	iconalt="earphone icon"
-	iconsrc="/icons/listen.svg"
->
+<ContentSection id="devx-pod" title="DevX Pod" annotation="listen" icon={Listen}>
 	<p slot="text" class="pt-x-small text-justify">
 		DevX Pod feature in-depth interviews with DevX experts. Hosts Pauline Narvas and Chris Weichel
 		speak with developer experience leaders to unpack the ins-and-outs of the field.

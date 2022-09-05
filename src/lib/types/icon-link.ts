@@ -1,8 +1,6 @@
 export type IconLink = {
-	icon: {
-		src: string;
-		alt: string;
-	};
+	icon: any;
+	iconClasses?: string;
 	href: string;
 	text: string;
 };

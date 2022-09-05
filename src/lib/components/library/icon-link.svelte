@@ -1,14 +1,13 @@
 <script lang="ts">
 	import type { IconLink } from '$lib/types/icon-link';
 	export let iconLink: IconLink;
-	const { href, text, icon } = iconLink;
-	const { src, alt } = icon;
+	const { href, text, icon, iconClasses } = iconLink;
 </script>
 
 <a
 	{href}
-	class="flex gap-2.5 whitespace-nowrap border-b border-body pb-2 pr-[1px] text-p-small font-bold no-underline"
+	class="inline-flex items-center justify-center gap-3 whitespace-nowrap border-b border-body pb-1 text-center text-p-small font-bold no-underline transition-all delay-50 duration-200 hover:border-transparent"
 >
-	<img {src} {alt} />
+	<svelte:component this={icon} class={iconClasses} />
 	{text}
 </a>
