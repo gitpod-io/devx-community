@@ -16,19 +16,19 @@
 		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
 			<li>
 				<a class="flex items-center gap-1" href="#devx-blog">
-					<img src="/icons/read.svg" alt="shelf icon" />
+					<img class="h-[18px] w-[18px]" src="/icons/read.svg" alt="shelf icon" />
 					DevX Blog</a
 				>
 			</li>
 			<li>
 				<a class="flex items-center gap-1" href="#devx-conf">
-					<img src="/icons/watch.svg" alt="youtube icon" />
+					<img class="h-[14px] w-[20px]" src="/icons/watch.svg" alt="youtube icon" />
 					DevX Conf</a
 				>
 			</li>
 			<li>
 				<a class="flex items-center gap-1" href="#devx-pod">
-					<img src="/icons/listen.svg" alt="earphone icon" />
+					<img class="h-[20px] w-[18px]" width="20" src="/icons/listen.svg" alt="earphone icon" />
 					DevX Pod</a
 				>
 			</li>
