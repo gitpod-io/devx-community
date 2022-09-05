@@ -35,7 +35,9 @@
 
 		<div class="mx-auto max-w-4xl text-center">
 			<h3 class="h4 pb-x-small text-important">Exchange ideas and knowledge with DevX leaders</h3>
-			<GradientLinkButton href="#">Join the community</GradientLinkButton>
+			<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9"
+				>Join the community</GradientLinkButton
+			>
 		</div>
 	</div>
 </Section>
