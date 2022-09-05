@@ -39,7 +39,7 @@
 	};
 </script>
 
-<div class="flex divide-x divide-sub">
+<div class="flex gap-4">
 	<button title="Switch to System's prefered color scheme." on:click={setSystem}>
 		<Gear active={theme === 'system'} />
 	</button>
