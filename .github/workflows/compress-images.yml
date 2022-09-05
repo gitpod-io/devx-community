@@ -2,7 +2,6 @@
 # Open a Pull Request if any images can be compressed.
 name: Compress Images
 on:
-  pull_request:
   workflow_dispatch:
   schedule:
     - cron: '00 23 * * 0'
