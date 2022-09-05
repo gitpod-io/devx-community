@@ -15,16 +15,16 @@
 	textClassNames="max-w-xl mx-auto pb-small"
 	class="flex flex-col items-center"
 >
-	<div class="mx-auto max-w-xl pb-xx-large">
-		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
-			{#each iconLinks as link}
-				<li class="flex items-center justify-center">
-					<IconLink iconLink={link} />
-				</li>
-			{/each}
-		</ul>
-	</div>
-	<div>
+	<div class="space-y-x-large md:space-y-xx-large">
+		<div class="mx-auto max-w-xl">
+			<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
+				{#each iconLinks as link}
+					<li class="flex items-center justify-center">
+						<IconLink iconLink={link} />
+					</li>
+				{/each}
+			</ul>
+		</div>
 		<DevxBlog />
 		<DevxConf />
 		<DevxPod />
