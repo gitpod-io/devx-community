@@ -8,9 +8,9 @@
 	title="What is this community?"
 	text="With <span class='underline'>developerexperience.us</span> and our DevX activities, we want to create a shared space for those that work on creating a better developer experience for all of us.<br /><br /> DevX leaders come together in our DevX community to connect, create, and exchange learnings and insights.<br /><br />As part of our community, you will get visibility as DevX leader, networking opportunities, share real-world experiences and be part of a bigger mission."
 	titleClassNames="max-w-xl mx-auto"
-	textClassNames="max-w-xl pb-large"
+	textClassNames="max-w-xl pb-small sm:pb-large"
 >
-	<div class="pb-large">
+	<div class="pb-small sm:pb-large">
 		<HowToJoin />
 	</div>
 

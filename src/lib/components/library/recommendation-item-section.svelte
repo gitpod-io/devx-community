@@ -6,7 +6,7 @@
 </script>
 
 <div class="max-w-[275px]">
-	<h3 class="pb-xx-small text-center text-h3">{title}</h3>
+	<h3 class="h4 md:h3 pb-4 text-center md:pb-xx-small">{title}</h3>
 	<ul class="list-inside list-disc space-y-2 sm:list-outside">
 		{#each recommendationItems as item}
 			<li>

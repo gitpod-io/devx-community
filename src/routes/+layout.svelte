@@ -8,7 +8,7 @@
 <div class="flex min-h-screen flex-col">
 	<Nav />
 
-	<Container element="main" class="pt-xx-large">
+	<Container element="main" class="pt-24 sm:pt-28 md:pt-xx-large">
 		<slot />
 	</Container>
 	<Footer />
