@@ -12,7 +12,7 @@
 		their job.
 	</p>
 	<div>
-		<h4 class="h4 pt-large">Highlighted Posts</h4>
+		<h4 class="pt-large text-base">Highlighted Posts</h4>
 		<div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each devXBlog as item}
 				<GradientContentCard data={item} />
