@@ -9,7 +9,6 @@
 	import JoinNow from '$lib/components/index/fragments/join-now.svelte';
 
 	import OpenGraph from '$lib/components/library/open-graph.svelte';
-	import ExchangeIdeas from '$lib/components/index/exchange-ideas.svelte';
 </script>
 
 <OpenGraph
@@ -27,8 +26,6 @@
 <WhatIsThisCommunity />
 
 <LearnMore />
-
-<ExchangeIdeas />
 
 <CommunityRecommendations />
 

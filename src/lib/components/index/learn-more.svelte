@@ -5,6 +5,7 @@
 	import DevxConf from './fragments/devx-conf.svelte';
 	import { iconLinks } from '$lib/contents/index/learn-more';
 	import IconLink from '../library/icon-link.svelte';
+	import GradientLinkButton from '../library/gradient-link-button.svelte';
 </script>
 
 <Section
@@ -14,15 +15,22 @@
 	textClassNames="max-w-xl mx-auto pb-medium"
 	class="flex flex-col items-center"
 >
-	<div class="mx-auto max-w-xl pb-xx-large">
-		<ul class="flex justify-center gap-x-large">
-			{#each iconLinks as iconLink}
-				<IconLink {iconLink} />
-			{/each}
-		</ul>
-	</div>
+	<div class="space-y-x-large md:space-y-xx-large">
+		<div class="mx-auto max-w-xl">
+			<ul class="flex justify-center gap-x-large">
+				{#each iconLinks as iconLink}
+					<IconLink {iconLink} />
+				{/each}
+			</ul>
+		</div>
 
-	<DevxBlog />
-	<DevxConf />
-	<DevxPod />
+		<DevxBlog />
+		<DevxConf />
+		<DevxPod />
+
+		<div class="mx-auto max-w-4xl text-center">
+			<h3 class="h4 pb-x-small text-important">Exchange ideas and knowledge with DevX leaders</h3>
+			<GradientLinkButton href="#">Join the community</GradientLinkButton>
+		</div>
+	</div>
 </Section>
