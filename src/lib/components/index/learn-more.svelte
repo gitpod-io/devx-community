@@ -3,6 +3,9 @@
 	import DevxBlog from './fragments/devx-blog.svelte';
 	import DevxPod from './fragments/devx-pod.svelte';
 	import DevxConf from './fragments/devx-conf.svelte';
+	import Watch from '../svgs/watch.svelte';
+	import Listen from '../svgs/listen.svelte';
+	import Read from '../svgs/read.svelte';
 </script>
 
 <Section
@@ -15,20 +18,19 @@
 	<div class="mx-auto max-w-xl pb-xx-large">
 		<ul class="grid grid-cols-1 gap-large sm:grid-cols-3">
 			<li>
-				<a class="flex items-center gap-1" href="#devx-blog">
-					<img class="h-[18px] w-[18px]" src="/icons/read.svg" alt="shelf icon" />
+				<a class="flex items-center justify-center gap-1" href="#devx-blog">
+					<Read class="h-[18px] w-[18px]" />
 					DevX Blog</a
 				>
 			</li>
 			<li>
-				<a class="flex items-center gap-1" href="#devx-conf">
-					<img class="h-[14px] w-[20px]" src="/icons/watch.svg" alt="youtube icon" />
-					DevX Conf</a
+				<a class="flex items-center justify-center gap-1" href="#devx-conf">
+					<Watch class="h-[14px] w-[20px]" /> DevX Conf</a
 				>
 			</li>
 			<li>
-				<a class="flex items-center gap-1" href="#devx-pod">
-					<img class="h-[20px] w-[18px]" width="20" src="/icons/listen.svg" alt="earphone icon" />
+				<a class="flex items-center justify-center gap-1" href="#devx-pod">
+					<Listen class="h-[20px] w-[18px] border-none" />
 					DevX Pod</a
 				>
 			</li>
