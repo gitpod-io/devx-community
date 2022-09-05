@@ -6,7 +6,7 @@
 	export let annotation: string;
 </script>
 
-<section {id} class="mx-auto max-w-xl pt-medium">
+<section {id} class="mx-auto max-w-xl">
 	<div class="flex items-center gap-4">
 		<h3 class="h3 inline">{title}</h3>
 		<svelte:component this={icon} />
