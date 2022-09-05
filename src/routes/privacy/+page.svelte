@@ -212,7 +212,7 @@
 		<li class="marker:font-bold">
 			<h4 class="font-bold text-important">Your Rights</h4>
 			As a data subject you have the right:
-			<ul class="ml-8 list-disc">
+			<ul class="ml-4 list-disc md:ml-8">
 				<li>
 					(where we are relying on your consent) to withdraw your consent to us at any time. As a
 					result, we are no longer allowed to continue the processing of data based on this consent
