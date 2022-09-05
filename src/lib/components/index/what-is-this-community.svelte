@@ -14,7 +14,13 @@
 		<HowToJoin />
 	</div>
 
-	<div class="text-center">
+	<div
+		class="text-center"
+		on:click={() => {
+			//@ts-ignore
+			window.analytics?.track('join_button_clicked', { orderOnPage: 1 });
+		}}
+	>
 		<GradientLinkButton href="#">Join the community</GradientLinkButton>
 	</div>
 </Section>

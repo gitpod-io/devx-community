@@ -16,9 +16,16 @@
 		isRevealDisabled={true}
 		revealClassNames="relative sm:static"
 	>
-		<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9">
-			Join the community
-		</GradientLinkButton>
+		<div
+			on:click={() => {
+				//@ts-ignore
+				window.analytics?.track('join_button_clicked', { orderOnPage: 3 });
+			}}
+		>
+			<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9">
+				Join the community
+			</GradientLinkButton>
+		</div>
 		<Dot
 			class="absolute inset-0 -z-10 hidden h-[200px] w-[200px] sm:block sm:h-auto sm:w-auto sm:transform-none"
 		/>
