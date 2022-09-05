@@ -5,8 +5,8 @@
 	export let title: string;
 </script>
 
-<div>
-	<h3 class="pb-x-small text-center text-h3">{title}</h3>
+<div class="max-w-[275px]">
+	<h3 class="pb-xx-small text-center text-h3">{title}</h3>
 	<ul class="list-inside list-disc space-y-2 sm:list-outside">
 		{#each recommendationItems as item}
 			<li>

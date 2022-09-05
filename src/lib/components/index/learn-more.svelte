@@ -3,6 +3,8 @@
 	import DevxBlog from './fragments/devx-blog.svelte';
 	import DevxPod from './fragments/devx-pod.svelte';
 	import DevxConf from './fragments/devx-conf.svelte';
+	import { iconLinks } from '$lib/contents/index/learn-more';
+	import IconLink from '../library/icon-link.svelte';
 	import Watch from '../svgs/watch.svelte';
 	import Listen from '../svgs/listen.svelte';
 	import Read from '../svgs/read.svelte';
@@ -12,7 +14,7 @@
 	title="Learn more about developer experience"
 	text="We are creating a multi-media knowledge base to help demystify the world of developer experience. Start here!"
 	titleClassNames="max-w-4xl mx-auto"
-	textClassNames="max-w-xl mx-auto pb-large"
+	textClassNames="max-w-xl mx-auto pb-medium"
 	class="flex flex-col items-center"
 >
 	<div class="mx-auto max-w-xl pb-xx-large">

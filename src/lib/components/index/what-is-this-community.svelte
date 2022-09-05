@@ -10,7 +10,7 @@
 	titleClassNames="max-w-xl mx-auto"
 	textClassNames="max-w-xl pb-large"
 >
-	<div class="pb-xx-large">
+	<div class="pb-large">
 		<HowToJoin />
 	</div>
 
