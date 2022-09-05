@@ -2,15 +2,10 @@
 	import ContentSection from '../../library/content-section.svelte';
 	import GradientContentCard from '../../library/gradient-content-card.svelte';
 	import { devXBlog } from '$lib/contents/index/devx-content';
+	import Read from '../../svgs/read.svelte';
 </script>
 
-<ContentSection
-	id="devx-blog"
-	title="DevX Blog"
-	annotation="read"
-	iconalt="shelf icon"
-	iconsrc="/icons/read.svg"
->
+<ContentSection id="devx-blog" title="DevX Blog" annotation="read" icon={Read}>
 	<p slot="text" class="pt-x-small text-justify">
 		DevX Blog is a community-driven platform for articles and interviews on developer experience. We
 		highlight and create content to help those working in developer experience get even better at

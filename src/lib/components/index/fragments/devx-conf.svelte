@@ -2,15 +2,10 @@
 	import ContentSection from '../../library/content-section.svelte';
 	import { devXConf } from '$lib/contents/index/devx-content';
 	import GradientContentCard from '../../library/gradient-content-card.svelte';
+	import Watch from '../../svgs/watch.svelte';
 </script>
 
-<ContentSection
-	id="devx-conf"
-	title="DevX Conf"
-	annotation="watch"
-	iconalt="youtube icon"
-	iconsrc="/icons/watch.svg"
->
+<ContentSection id="devx-conf" title="DevX Conf" annotation="watch" icon={Watch}>
 	<p slot="text" class="pt-x-small text-justify">
 		DevX Conf is a virtual conference on developer experience that happens every year. DevX
 		practitioners at leading companies discuss their best tools, processes, and latest learnings.
