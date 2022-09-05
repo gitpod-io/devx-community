@@ -1,4 +1,5 @@
 <script lang="ts">
+	// import Gear from '../svgs/switcher/gear.svelte';
 	import Sun from '../svgs/switcher/sun.svelte';
 	import Moon from '../svgs/switcher/moon.svelte';
 	import { onMount } from 'svelte';
@@ -26,9 +27,22 @@
 		localStorage.setItem('theme', 'dark');
 		theme = 'dark';
 	};
+
+	// const setSystem = () => {
+	// 	if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	// 		document.body.classList.replace('light', 'dark');
+	// 	} else {
+	// 		document.body.classList.replace('dark', 'light');
+	// 	}
+	// 	localStorage.setItem('theme', 'system');
+	// 	theme = 'system';
+	// };
 </script>
 
-<div class="flex gap-4">
+<div class="flex">
+	<!-- <button title="Switch to System's prefered color scheme." on:click={setSystem}>
+		<Gear active={theme === 'system'} />
+	</button> -->
 	<button title="Switch to Light theme" on:click={setLight}>
 		<Sun active={theme === 'light'} />
 	</button>
@@ -39,7 +53,7 @@
 
 <style lang="postcss">
 	button {
-		@apply px-2 py-1;
+		@apply flex h-12 w-12 items-center;
 	}
 
 	button > :global(svg) {

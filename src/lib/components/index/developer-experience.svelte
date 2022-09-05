@@ -8,7 +8,7 @@
 
 <Section title="What is developer experience?" class="relative">
 	<div class="mx-auto max-w-xl pb-small md:pb-large">
-		<h3 class="h4 md:h3 pb-4 md:pb-xx-small">Community Manifesto</h3>
+		<h3 class="h4 pb-4 md:pb-xx-small">Community Manifesto</h3>
 		<p>
 			Developer experience - our daily experience when trying to get the job done. All of that
 			should be efficient, sustainable and joyful.
