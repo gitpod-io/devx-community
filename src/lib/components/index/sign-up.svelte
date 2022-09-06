@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Dot from '../library/dot.svelte';
+	import GradientCardNoHover from '../library/gradient-card-no-hover.svelte';
 
-	import GradientCard from '../library/gradient-card.svelte';
 	import GradientLinkButton from '../library/gradient-link-button.svelte';
 
 	let isDisabled = false;
@@ -37,7 +37,7 @@
 	};
 </script>
 
-<GradientCard element="div" class="mx-auto max-w-xl !p-small">
+<GradientCardNoHover element="div" class="mx-auto max-w-xl !p-small">
 	{#if isSignupSuccessful}
 		<div class="flex flex-col items-center justify-center py-x-large">
 			<Dot class="mb-small h-24 w-24" />
@@ -90,4 +90,4 @@
 			</div>
 		</form>
 	{/if}
-</GradientCard>
+</GradientCardNoHover>
