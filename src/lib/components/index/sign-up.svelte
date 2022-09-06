@@ -17,20 +17,35 @@
 		<p class="text-large mb-x-small text-center">
 			Sign up to stay updated on the latest DevX discoveries and news.
 		</p>
-		<input
-			type="email"
-			placeholder="Enter email"
-			class="mx-auto mb-x-small block w-full rounded-lg border border-solid border-important bg-transparent px-5 py-3 placeholder:text-body sm:w-[340px]"
-			required
-			bind:value={email}
-		/>
+		<div class="mx-auto mb-x-small flex flex-col items-center">
+			<input
+				type="email"
+				placeholder="Enter email"
+				class="{isFormDirty && !email
+					? 'border-red-500 placeholder:text-red-500'
+					: ''} block w-full rounded-lg border border-solid border-important bg-transparent px-5 py-3 placeholder:text-body sm:w-[340px]"
+				bind:value={email}
+			/>
+			{#if isFormDirty && !email}<legend class="text-xs text-red-500"
+					>Please input your email address</legend
+				>{/if}
+		</div>
 		<div class="mx-auto flex max-w-sm flex-col">
-			<label class="mb-4 flex gap-4">
-				<input type="checkbox" required bind:checked={consent} />
-				<p class="text-xs {isFormDirty && !consent ? '!text-red-500' : ''}">
-					I consent to having this website store my submitted information.
-				</p>
-			</label>
+			<div class="mb-4">
+				<label class="mb-1 flex gap-4">
+					<input
+						class={isFormDirty && !consent ? 'border border-red-500' : ''}
+						type="checkbox"
+						bind:checked={consent}
+					/>
+					<p class="text-xs {isFormDirty && !consent ? '!text-red-500' : ''}">
+						I consent to having this website store my submitted information.
+					</p>
+				</label>
+				{#if isFormDirty && !consent}<legend class="text-center text-xs text-red-500"
+						>Please consent to sign up</legend
+					>{/if}
+			</div>
 			<p class="text-xs">
 				By submitting this form I acknowledge that I have read and understood the <a href="/privacy"
 					>Privacy Policy</a
