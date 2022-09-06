@@ -6,8 +6,23 @@
 	let consent = false;
 	let isFormDirty = false;
 
-	const handleSubmit = () => {
+	const handleSubmit = async () => {
 		isFormDirty = true;
+
+		try {
+			const response = await fetch('/api/submit-form', {
+				method: 'POST',
+				body: JSON.stringify(email)
+			});
+			if (response.ok) {
+				// isEmailSent = true;
+			} else {
+				console.error(response.statusText);
+			}
+			console.log('Called.');
+		} catch (error) {
+			console.error(error);
+		}
 	};
 </script>
 

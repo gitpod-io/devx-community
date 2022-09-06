@@ -5,3 +5,7 @@
 [functions]
   directory = "src/functions"
   node_bundler = "esbuild"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173

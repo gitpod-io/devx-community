@@ -22,7 +22,7 @@ export default async (sheetInfo: { title: string; data: any }): Promise<boolean 
 		if (existingEmails.includes(sheetInfoData)) {
 			return 'duplicate';
 		}
-		await sheet.addRow(sheetInfo.data);
+		await sheet.addRow([sheetInfo.data]);
 		return true;
 	} catch (error) {
 		console.error(error);
