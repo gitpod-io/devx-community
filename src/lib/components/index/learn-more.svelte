@@ -30,7 +30,9 @@
 		<div class="flex justify-center pb-large">
 			<Dot class="h-[120px] w-[120px]" />
 		</div>
-		<DevxConf />
+		<div class="!mt-0">
+			<DevxConf />
+		</div>
 		<DevxPod />
 
 		<div class="mx-auto max-w-4xl text-center">
