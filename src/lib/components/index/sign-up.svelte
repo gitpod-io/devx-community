@@ -13,10 +13,10 @@
 	$: isFormValid = consent && email;
 
 	const handleSubmit = async () => {
-		isDisabled = true;
 		isFormDirty = true;
 
 		if (isFormValid) {
+			isDisabled = true;
 			try {
 				const response = await fetch('/api/submit-form', {
 					method: 'POST',
@@ -29,6 +29,7 @@
 					console.error(response.statusText);
 				}
 			} catch (error) {
+				isDisabled = false;
 				console.error(error);
 			}
 		}
