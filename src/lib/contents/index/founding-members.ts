@@ -35,13 +35,6 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/cctechwiz'
 	},
 	{
-		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
-		name: 'Elvis Kahroo',
-		company: '@Warp',
-		role: 'DevX Engineer',
-		linkedinLink: 'https://www.linkedin.com/in/elviskahoro/'
-	},
-	{
 		imgsrc: '/images/portraits/phillip_carter.jpeg',
 		name: 'Phillip Carter',
 		company: '@Honeycomb',
@@ -64,5 +57,12 @@ export const foundingMembers: Portrait[] = [
 		role: 'Head of Developer Experience',
 		linkedinLink: 'https://www.linkedin.com/in/geoffteale/',
 		twitterLink: 'https://twitter.com/tealeg'
+	},
+	{
+		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
+		name: 'Elvis Kahroo',
+		company: '@Warp',
+		role: 'DevX Engineer',
+		linkedinLink: 'https://www.linkedin.com/in/elviskahoro/'
 	}
 ];
