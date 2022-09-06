@@ -2,6 +2,7 @@
 	export let href = '';
 	const target = href.startsWith('http') ? '_blank' : null;
 	export let rel = '';
+	export let isDisabled = false;
 	export let element: 'a' | 'button' = 'a';
 	let className = '';
 	export { className as class };
@@ -9,6 +10,7 @@
 
 <svelte:element
 	this={element}
+	class:disabled={isDisabled}
 	{target}
 	{href}
 	{rel}
@@ -19,6 +21,9 @@
 </svelte:element>
 
 <style lang="postcss">
+	.disabled {
+		@apply pointer-events-none opacity-50;
+	}
 	.gradient-border {
 		@apply relative z-10;
 		background-image: linear-gradient(var(--black), var(--black)), var(--gradient-primary);

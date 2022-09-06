@@ -4,6 +4,7 @@
 	import GradientCard from '../library/gradient-card.svelte';
 	import GradientLinkButton from '../library/gradient-link-button.svelte';
 
+	let isDisabled = false;
 	let email: string;
 	let consent = false;
 	let isFormDirty = false;
@@ -12,6 +13,7 @@
 	$: isFormValid = consent && email;
 
 	const handleSubmit = async () => {
+		isDisabled = true;
 		isFormDirty = true;
 
 		if (isFormValid) {
@@ -22,6 +24,7 @@
 				});
 				if (response.ok) {
 					isSignupSuccessful = true;
+					isDisabled = false;
 				} else {
 					console.error(response.statusText);
 				}
@@ -50,7 +53,7 @@
 					type="email"
 					placeholder="Enter email"
 					class="{isFormDirty && !email
-						? 'border-red-500 placeholder:text-red-500'
+						? '!border-red-500 !placeholder-red-500'
 						: ''} block w-full rounded-lg border border-solid border-important bg-transparent px-5 py-3 placeholder:text-body sm:w-[340px]"
 					bind:value={email}
 				/>
@@ -80,12 +83,9 @@
 					>
 				</p>
 				<div class="mt-x-small flex justify-center">
-					<GradientLinkButton element="button">Sign up</GradientLinkButton>
+					<GradientLinkButton {isDisabled} element="button">Sign up</GradientLinkButton>
 				</div>
 			</div>
 		</form>
 	{/if}
 </GradientCard>
-
-<style lang="postcss">
-</style>
