@@ -7,6 +7,7 @@
 	import IconLink from '../library/icon-link.svelte';
 	import GradientLinkButton from '../library/gradient-link-button.svelte';
 	import Dot from '../library/dot.svelte';
+	import SignUp from './sign-up.svelte';
 </script>
 
 <Section
@@ -41,5 +42,7 @@
 				>Join the community</GradientLinkButton
 			>
 		</div>
+
+		<SignUp />
 	</div>
 </Section>

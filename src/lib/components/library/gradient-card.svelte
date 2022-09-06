@@ -1,20 +1,23 @@
 <script lang="ts">
 	let className = '';
 	export { className as class };
-	export let href: string;
+	export let href = '';
 	export let rel = '';
-	const target = href.startsWith('http') ? '_blank' : null;
+	const target = href && href.startsWith('http') ? '_blank' : null;
+	export let element = 'a';
 </script>
 
 <!-- We need to look if the card itself will be used as a link, or if we will have cta button in the card. In the second case, we can make it a <div> -->
-<a
+<svelte:element
+	this={element}
 	{target}
 	{href}
 	{rel}
+	{...$$restProps}
 	class="gradient-border block h-full rounded-2xl border-[2.5px] border-double border-transparent px-3 py-6 no-underline {className}"
 >
 	<slot />
-</a>
+</svelte:element>
 
 <style lang="postcss">
 	.gradient-border {
