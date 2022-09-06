@@ -20,6 +20,7 @@ async function saveToSheet(data: any) {
 }
 
 export const post = async ({ request }: any) => {
+	console.log(request);
 	const body = await request.json();
 	const email = body!;
 
