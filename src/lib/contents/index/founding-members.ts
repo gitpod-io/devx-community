@@ -50,12 +50,12 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/_cartermp'
 	},
 	{
-		imgsrc: 'https://amulett.at/wp-content/uploads/2018/10/portrait-square-05.jpg',
-		name: 'Josep Jaume',
-		role: 'Engineering Director',
-		company: '@Factorial',
-		linkedinLink: 'https://www.linkedin.com/in/josep-jaume-rey-peroy-a9701622/',
-		twitterLink: 'https://twitter.com/josepjaume'
+		imgsrc: '/images/portraits/chris_weichel.jpg',
+		name: 'Christian Weichel',
+		role: 'CTO',
+		company: '@Gitpod',
+		linkedinLink: 'https://www.linkedin.com/in/christian-weichel-740b4224/',
+		twitterLink: 'https://twitter.com/csweichel'
 	},
 	{
 		imgsrc: '/images/portraits/geoffrey_teale.jpg',
