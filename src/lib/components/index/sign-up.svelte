@@ -11,21 +11,21 @@
 		isDisabled = true;
 		isFormDirty = true;
 
-		// try {
-		// 	const response = await fetch('/api/submit-form', {
-		// 		method: 'POST',
-		// 		body: JSON.stringify(email)
-		// 	});
-		// 	if (response.ok) {
-		// 		// isEmailSent = true;
-		// 	} else {
-		// 		console.error(response.statusText);
-		// 	}
-		// 	console.log('Called.');
-		// 	isDisabled = false;
-		// } catch (error) {
-		// 	console.error(error);
-		// }
+		try {
+			const response = await fetch('/api/submit-form', {
+				method: 'POST',
+				body: JSON.stringify(email)
+			});
+			if (response.ok) {
+				// isEmailSent = true;
+			} else {
+				console.error(response.statusText);
+			}
+			console.log('Called.');
+			isDisabled = false;
+		} catch (error) {
+			console.error(error);
+		}
 	};
 </script>
 
