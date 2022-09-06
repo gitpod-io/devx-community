@@ -23,6 +23,12 @@
 		background-origin: border-box;
 		background-clip: padding-box, border-box;
 	}
+
+	.gradient-border:hover {
+		box-shadow: inset 3px 0 1px var(--sub), inset 0 -3px 1px var(--sub),
+			inset 0 3px 1px var(--highlight), inset -3px 0 1px var(--highlight);
+	}
+
 	.gradient-border::before {
 		@apply absolute top-0 left-0 -z-10 h-full w-full rounded-2xl opacity-0 transition-all delay-50 duration-200;
 		content: '';
@@ -30,7 +36,7 @@
 		background-origin: border-box;
 		background-clip: padding-box, border-box;
 	}
-	.gradient-border:hover::before {
+	/* .gradient-border:hover::before {
 		@apply opacity-100;
-	}
+	} */
 </style>
