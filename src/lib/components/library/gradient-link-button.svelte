@@ -1,19 +1,29 @@
 <script lang="ts">
-	export let href: string;
+	export let href = '';
 	const target = href.startsWith('http') ? '_blank' : null;
 	export let rel = '';
+	export let isDisabled = false;
+	export let element: 'a' | 'button' = 'a';
+	let className = '';
+	export { className as class };
 </script>
 
-<a
+<svelte:element
+	this={element}
+	class:disabled={isDisabled}
 	{target}
 	{href}
 	{rel}
-	class="gradient-border tracking[0.2em] h5 inline-block rounded-[40px] border-[2.5px] border-double border-transparent px-6 py-4 font-bold text-explicit-white-light no-underline sm:px-8"
+	{...$$restProps}
+	class="gradient-border tracking[0.2em] h5 inline-block rounded-[40px] border-[2.5px] border-double border-transparent px-6 py-4 font-bold text-explicit-white-light no-underline sm:px-8 {className}"
 >
 	<slot />
-</a>
+</svelte:element>
 
 <style lang="postcss">
+	.disabled {
+		@apply pointer-events-none opacity-50;
+	}
 	.gradient-border {
 		@apply relative z-10;
 		background-image: linear-gradient(var(--black), var(--black)), var(--gradient-primary);
