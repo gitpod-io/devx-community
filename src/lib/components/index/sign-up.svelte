@@ -2,11 +2,13 @@
 	import GradientCard from '../library/gradient-card.svelte';
 	import GradientLinkButton from '../library/gradient-link-button.svelte';
 
+	let isDisabled = false;
 	let email: string;
 	let consent = false;
 	let isFormDirty = false;
 
 	const handleSubmit = async () => {
+		isDisabled = true;
 		isFormDirty = true;
 
 		try {
@@ -20,6 +22,7 @@
 				console.error(response.statusText);
 			}
 			console.log('Called.');
+			isDisabled = false;
 		} catch (error) {
 			console.error(error);
 		}
@@ -67,11 +70,8 @@
 				>
 			</p>
 			<div class="mt-x-small flex justify-center">
-				<GradientLinkButton element="button">Sign up</GradientLinkButton>
+				<GradientLinkButton {isDisabled} element="button">Sign up</GradientLinkButton>
 			</div>
 		</div>
 	</form>
 </GradientCard>
-
-<style lang="postcss">
-</style>
