@@ -29,7 +29,7 @@ export const POST = async ({ request }: any) => {
 		const saveResponse = await saveToSheet(email);
 
 		return json(saveResponse.body, {
-			status: 200
+			status: saveResponse.statusCode
 		});
 	} catch (err) {
 		console.error(err);

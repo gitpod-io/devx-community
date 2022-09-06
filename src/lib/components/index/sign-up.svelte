@@ -23,9 +23,10 @@
 					body: JSON.stringify(email)
 				});
 				if (response.ok) {
+					console.log(response);
 					isSignupSuccessful = true;
-					isDisabled = false;
 				} else {
+					isDisabled = false;
 					console.error(response.statusText);
 				}
 			} catch (error) {
