@@ -21,7 +21,7 @@
 		</p>
 	</div>
 	<FullBleed class="w-screen bg-box pt-small md:pt-large">
-		<Container>
+		<Container class="pb-small md:pb-large">
 			<div class="mx-auto max-w-xl">
 				<div class="grid grid-cols-2 gap-1" style="max-width: {2 * 18 + 4}px;">
 					{#each Array(4) as _}

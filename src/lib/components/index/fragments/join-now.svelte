@@ -14,7 +14,7 @@
 		textClassNames="text-important max-w-md pb-6"
 		line={false}
 		isRevealDisabled={true}
-		revealClassNames="relative sm:static"
+		revealClassNames="relative sm:static pb-x-large mb-x-small sm:pb-0 sm:mb-0"
 	>
 		<GradientLinkButton href="https://forms.gle/sX53FUvXBF7avS2u9">
 			Join the community
