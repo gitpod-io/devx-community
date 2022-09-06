@@ -83,7 +83,7 @@
 					>
 				</p>
 				<div class="mt-x-small flex justify-center">
-					<GradientLinkButton element="button">Sign up</GradientLinkButton>
+					<GradientLinkButton {isDisabled} element="button">Sign up</GradientLinkButton>
 				</div>
 			</div>
 		</form>
