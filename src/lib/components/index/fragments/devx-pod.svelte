@@ -7,7 +7,7 @@
 
 <ContentSection id="devx-pod" title="DevX Pod" annotation="listen" icon={Listen}>
 	<p slot="text" class="pt-x-small text-justify">
-		DevX Pod feature in-depth interviews with DevX experts. Hosts Pauline Narvas and Chris Weichel
+		DevX Pod features in-depth interviews with DevX experts. Hosts Pauline Narvas and Chris Weichel
 		speak with developer experience leaders to unpack the ins-and-outs of the field.
 	</p>
 	<div>
