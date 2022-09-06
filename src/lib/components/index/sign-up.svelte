@@ -41,7 +41,7 @@
 	{#if isSignupSuccessful}
 		<div class="flex flex-col items-center justify-center py-x-large">
 			<Dot class="mb-small h-24 w-24" />
-			<h2 class="h4 text-center">Thanks for signing up for the DevX digest.</h2>
+			<h2 class="h4 text-center">Thanks for signing up for the DevX&nbsp;digest.</h2>
 			<p class="mt-x-small">You'll shortly get a confirmation email.</p>
 		</div>
 	{:else}
