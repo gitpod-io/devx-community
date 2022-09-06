@@ -11,21 +11,21 @@
 		isDisabled = true;
 		isFormDirty = true;
 
-		try {
-			const response = await fetch('/api/submit-form', {
-				method: 'POST',
-				body: JSON.stringify(email)
-			});
-			if (response.ok) {
-				// isEmailSent = true;
-			} else {
-				console.error(response.statusText);
-			}
-			console.log('Called.');
-			isDisabled = false;
-		} catch (error) {
-			console.error(error);
-		}
+		// try {
+		// 	const response = await fetch('/api/submit-form', {
+		// 		method: 'POST',
+		// 		body: JSON.stringify(email)
+		// 	});
+		// 	if (response.ok) {
+		// 		// isEmailSent = true;
+		// 	} else {
+		// 		console.error(response.statusText);
+		// 	}
+		// 	console.log('Called.');
+		// 	isDisabled = false;
+		// } catch (error) {
+		// 	console.error(error);
+		// }
 	};
 </script>
 
@@ -40,7 +40,7 @@
 				type="email"
 				placeholder="Enter email"
 				class="{isFormDirty && !email
-					? 'border-red-500 placeholder:text-red-500'
+					? '!border-red-500 !placeholder-red-500'
 					: ''} block w-full rounded-lg border border-solid border-important bg-transparent px-5 py-3 placeholder:text-body sm:w-[340px]"
 				bind:value={email}
 			/>
