@@ -3,9 +3,10 @@
 	import GradientContentCard from '../../library/gradient-content-card.svelte';
 	import { devXPod } from '$lib/contents/index/devx-content';
 	import Listen from '../../svgs/listen.svelte';
+	import BigDot from '$lib/components/library/big-dot.svelte';
 </script>
 
-<ContentSection id="devx-pod" title="DevX Pod" annotation="listen" icon={Listen}>
+<ContentSection id="devx-pod" title="DevX Pod" annotation="listen" icon={Listen} class="relative">
 	<p slot="text" class="pt-x-small text-justify">
 		DevX Pod features in-depth interviews with DevX experts. Hosts Pauline Narvas and Chris Weichel
 		speak with developer experience leaders to unpack the ins-and-outs of the field.
@@ -21,4 +22,7 @@
 			{/each}
 		</div>
 	</div>
+
+	<!-- You must apply postion relative to the parent in order to get it to work -->
+	<BigDot alignment="right" />
 </ContentSection>
