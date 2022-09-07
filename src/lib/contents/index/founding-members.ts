@@ -60,7 +60,7 @@ export const foundingMembers: Portrait[] = [
 	},
 	{
 		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
-		name: 'Elvis Kahroo',
+		name: 'Elvis Kahoro',
 		company: '@Warp',
 		role: 'DevX Engineer',
 		linkedinLink: 'https://www.linkedin.com/in/elviskahoro/'
