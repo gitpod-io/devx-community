@@ -1,8 +1,16 @@
 import type { Portrait } from '$lib/types/portrait.type';
+import ChrisWeichel from '$lib/images/portraits/chris_weichel.jpg?w=300&h=300&webp';
+import PaulineNarvas from '$lib/images/portraits/pauline_narvas.png?w=300&h=300&webp';
+import Cirpo from '$lib/images/portraits/cirpo.jpeg?w=300&h=300&webp';
+import AbiNoda from '$lib/images/portraits/abi_noda.png?w=300&h=300&webp';
+import JoshMaxwell from '$lib/images/portraits/josh_maxwell.jpeg?w=300&h=300&webp';
+import PhillipCarter from '$lib/images/portraits/phillip_carter.jpeg?w=300&h=300&webp';
+import GeoffreyTeale from '$lib/images/portraits/geoffrey_teale.jpg?w=300&h=300&webp';
+import ElvisKahoro from '$lib/images/portraits/elvis_kahoro.jpeg?w=300&h=300&webp';
 
 export const foundingMembers: Portrait[] = [
 	{
-		imgsrc: '/images/portraits/cirpo.jpeg',
+		imgsrc: Cirpo,
 		name: 'Cirpo',
 		company: '@Spotify',
 		role: 'Engineering Manager - Core Infra',
@@ -11,7 +19,7 @@ export const foundingMembers: Portrait[] = [
 	},
 
 	{
-		imgsrc: 'images/portraits/abi_noda.png',
+		imgsrc: AbiNoda,
 		name: 'Abi Noda',
 		company: '@DX',
 		role: 'CEO',
@@ -19,7 +27,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/abinoda'
 	},
 	{
-		imgsrc: '/images/portraits/pauline_narvas.png',
+		imgsrc: PaulineNarvas,
 		name: 'Pauline Narvas',
 		company: '@Gitpod',
 		role: 'Head of Community',
@@ -27,7 +35,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/paulienuh'
 	},
 	{
-		imgsrc: '/images/portraits/josh_maxwell.jpeg',
+		imgsrc: JoshMaxwell,
 		name: 'Josh Maxwell',
 		company: '@Qualtrics',
 		linkedinLink: 'https://www.linkedin.com/in/cctechwiz/',
@@ -35,7 +43,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/cctechwiz'
 	},
 	{
-		imgsrc: '/images/portraits/phillip_carter.jpeg',
+		imgsrc: PhillipCarter,
 		name: 'Phillip Carter',
 		company: '@Honeycomb',
 		role: 'Product & DX',
@@ -43,7 +51,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/_cartermp'
 	},
 	{
-		imgsrc: '/images/portraits/chris_weichel.jpg',
+		imgsrc: ChrisWeichel,
 		name: 'Christian Weichel',
 		role: 'CTO',
 		company: '@Gitpod',
@@ -51,7 +59,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/csweichel'
 	},
 	{
-		imgsrc: '/images/portraits/geoffrey_teale.jpg',
+		imgsrc: GeoffreyTeale,
 		name: 'Geoffrey Teale',
 		company: '@Upvest',
 		role: 'Head of Developer Experience',
@@ -59,7 +67,7 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/tealeg'
 	},
 	{
-		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
+		imgsrc: ElvisKahoro,
 		name: 'Elvis Kahoro',
 		company: '@Warp',
 		role: 'DevX Engineer',

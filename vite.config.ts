@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { imagetools } from 'vite-imagetools';
 import type { UserConfig } from 'vite';
 import { execSync } from 'node:child_process';
 
@@ -19,7 +20,7 @@ try {
 }
 
 const config: UserConfig = {
-	plugins: [sveltekit()],
+	plugins: [sveltekit(), imagetools()],
 	server: {
 		...extendedViteDevServerOptions
 	}
