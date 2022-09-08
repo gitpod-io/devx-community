@@ -8,8 +8,10 @@
 	import RecommendationItemSection from '../library/recommendation-item-section.svelte';
 </script>
 
-<Section title="Community Recommendations" titleClassNames="max-w-6xl" class="mx-auto">
-	<div class="mx-auto flex max-w-5xl flex-wrap justify-center gap-x-small md:gap-medium">
+<Section title="Community Recommendations" titleClassNames="max-w-6xl" class="mx-auto max-w-4xl">
+	<div
+		class="mx-auto flex max-w-5xl flex-wrap justify-center gap-x-small md:gap-medium lg:justify-between"
+	>
 		<RecommendationItemSection title="Blogs" recommendationItems={blogRecommendations} />
 		<RecommendationItemSection title="Podcasts" recommendationItems={podcasts} />
 		<RecommendationItemSection title="Knowledge Bases" recommendationItems={knowledgeBases} />
