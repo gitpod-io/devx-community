@@ -1,4 +1,4 @@
-<div class="mx-auto max-w-xl">
+<div class="mx-auto mb-medium max-w-xl">
 	<h1 class="h2 mb-x-large text-center">Imprint</h1>
 	<p />
 	<div>Gitpod GmbH</div>

@@ -13,18 +13,17 @@
 			const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 			if (theme === null) {
-				localStorage.setItem('theme', 'light');
 				if (darkMediaQuery.matches) {
+					localStorage.setItem('theme', 'dark');
 					document.body.classList.add('dark');
 				} else {
+					localStorage.setItem('theme', 'light');
 					document.body.classList.add('light');
 				}
 			} else if (theme === 'dark') {
 				document.body.classList.add('dark');
 			} else if (theme === 'light') {
 				document.body.classList.add('light');
-			} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				document.body.classList.add('dark');
 			} else {
 				document.body.classList.add('light');
 			}
