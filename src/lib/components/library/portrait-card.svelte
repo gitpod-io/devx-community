@@ -13,6 +13,7 @@
 	<div class="flex h-full flex-col items-center justify-between">
 		<div class="relative inline-block">
 			<img
+				loading="lazy"
 				class="rounded-2xl grayscale"
 				width="170"
 				height="170"
