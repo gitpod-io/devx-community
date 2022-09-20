@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@playwright/test": "^1.25.1",
 		"@sveltejs/adapter-netlify": "1.0.0-next.76",
-		"@sveltejs/kit": "1.0.0-next.469",
+		"@sveltejs/kit": "1.0.0-next.489",
 		"@types/google-spreadsheet": "^3.3.0",
 		"@typescript-eslint/eslint-plugin": "^5.36.0",
 		"@typescript-eslint/parser": "^5.36.0",
