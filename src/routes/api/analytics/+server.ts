@@ -6,8 +6,12 @@ import type { AnalyticsPayload } from '$lib/types/analytics';
 import { genSalt } from 'bcryptjs';
 
 const writeKey = env.ANALYTICS_WRITE_KEY || '';
-
-const analytics = new Analytics(writeKey);
+let analytics: Analytics;
+try {
+	analytics = new Analytics(writeKey);
+} catch (e) {
+	console.log('No token provided');
+}
 
 export const POST: RequestHandler = async ({ request }) => {
 	const body = (await request.json()) as AnalyticsPayload;
