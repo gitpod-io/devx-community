@@ -3,6 +3,7 @@ import Analytics from 'analytics-node';
 import { env } from '$env/dynamic/private';
 import { generateHash } from '$lib/utils/analytics';
 import type { AnalyticsPayload } from '$lib/types/analytics';
+import { genSalt } from 'bcryptjs';
 
 const writeKey = env.ANALYTICS_WRITE_KEY || '';
 
@@ -20,8 +21,8 @@ export const POST: RequestHandler = async ({ request }) => {
 	const today = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
 
 	const toHashString = ip + agent + today;
-
-	const hash = await generateHash(toHashString);
+	const salt = env.SALT || (await genSalt(10));
+	const hash = await generateHash(toHashString, salt);
 
 	if (!writeKey) {
 		return json(null, { status: 204 });
