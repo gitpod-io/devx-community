@@ -1,9 +1,9 @@
 // eslint-disable @typescript-eslint/no-explicit-any
 
-import { hash } from 'bcryptjs';
+import pkg from 'bcryptjs';
 import type { AnalyticsPayload } from '../types/analytics';
 export const generateHash = async (value: string, salt: string) => {
-	const hashedValue = await hash(value, salt);
+	const hashedValue = await pkg.hash(value, salt);
 	return hashedValue;
 };
 
