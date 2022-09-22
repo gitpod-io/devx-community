@@ -1,10 +1,11 @@
 // eslint-disable @typescript-eslint/no-explicit-any
 
-import pkg from 'bcryptjs';
 import type { AnalyticsPayload } from '../types/analytics';
-export const generateHash = async (value: string, salt: string) => {
-	const hashedValue = await pkg.hash(value, salt);
-	return hashedValue;
+import crypto from 'node:crypto';
+
+export const generateHash = async (value: string) => {
+	const hash = crypto.createHash('sha512').update(value).digest('hex');
+	return hash;
 };
 
 export const trackEvent = async (eventName: string, props: any) => {
