@@ -52,6 +52,7 @@
 			</p>
 			<div class="mx-auto mb-x-small flex flex-col items-center">
 				<input
+					id="email"
 					type="email"
 					placeholder="Enter email"
 					class="{isFormDirty && !email
@@ -59,18 +60,20 @@
 						: ''} block w-full rounded-lg border border-solid border-important bg-transparent px-5 py-3 placeholder:text-body sm:w-[340px]"
 					bind:value={email}
 				/>
+				<label for="email" class="sr-only">Enter Email</label>
 				{#if isFormDirty && !email}<legend class="text-xs text-red-500"
 						>Please input your email address</legend
 					>{/if}
 			</div>
 			<div class="mx-auto flex max-w-sm flex-col">
 				<div class="mb-4">
-					<label class="mb-1 flex gap-4">
-						<input
-							class={isFormDirty && !consent ? 'border border-red-500' : ''}
-							type="checkbox"
-							bind:checked={consent}
-						/>
+					<input
+						class={isFormDirty && !consent ? 'border border-red-500' : ''}
+						type="checkbox"
+						id="consent"
+						bind:checked={consent}
+					/>
+					<label class="mb-1 flex gap-4" for="consent">
 						<p class="text-xs {isFormDirty && !consent ? '!text-red-500' : ''}">
 							I consent to having this website store my submitted information.
 						</p>
