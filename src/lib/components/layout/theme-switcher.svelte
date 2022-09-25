@@ -39,7 +39,7 @@
 	// };
 </script>
 
-<div class="flex">
+<div class="flex gap-[38px] md:gap-8">
 	<!-- <button title="Switch to System's prefered color scheme." on:click={setSystem}>
 		<Gear active={theme === 'system'} />
 	</button> -->
@@ -53,7 +53,12 @@
 
 <style lang="postcss">
 	button {
-		@apply flex h-12 w-12 items-center;
+		@apply relative flex h-12 items-center;
+	}
+
+	button::before {
+		content: '';
+		@apply absolute left-1/2 h-12 w-12 -translate-x-1/2 rounded-full md:hidden;
 	}
 
 	button > :global(svg) {
