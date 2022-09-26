@@ -105,6 +105,30 @@
 	a {
 		@apply underline transition-all delay-50 duration-200 hover:decoration-transparent;
 	}
+
+	[type='checkbox'] {
+		@apply sr-only;
+	}
+
+	[type='checkbox'] + label::before {
+		content: '';
+		@apply h-5 w-5 rounded-sm border border-solid border-body;
+	}
+
+	[type='checkbox'] + label::after {
+		content: '\2713';
+		@apply absolute ml-1 -mt-0.5 font-serif text-base opacity-0 transition-all duration-200;
+		color: var(--red);
+	}
+
+	[type='checkbox']:checked + label::after {
+		@apply text-white opacity-100;
+	}
+
+	[type='checkbox']:checked + label::before {
+		background: var(--red);
+		border-color: var(--red);
+	}
 }
 
 @layer components {
