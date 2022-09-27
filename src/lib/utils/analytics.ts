@@ -1,6 +1,6 @@
 // eslint-disable @typescript-eslint/no-explicit-any
 
-import type { AnalyticsPayload } from '../types/analytics';
+import type { AnalyticsPayload, PageProps } from '../types/analytics';
 import crypto from 'node:crypto';
 
 export const generateHash = async (value: string) => {
@@ -33,10 +33,11 @@ export const trackIdentity = async (userID: string, traits: any) => {
 	});
 };
 
-export const trackPage = async (props: any) => {
+export const trackPage = async (props: PageProps) => {
 	const body: AnalyticsPayload = {
 		type: 'page',
-		props: props
+		props: props,
+		context: { page: props }
 	};
 	await fetch('/api/analytics', {
 		method: 'POST',

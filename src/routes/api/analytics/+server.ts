@@ -2,7 +2,7 @@ import { json, type RequestHandler } from '@sveltejs/kit';
 import Analytics from 'analytics-node';
 import { env } from '$env/dynamic/private';
 import { generateHash } from '$lib/utils/analytics';
-import type { AnalyticsPayload } from '$lib/types/analytics';
+import type { AnalyticsPayload, PageProps } from '$lib/types/analytics';
 
 const writeKey = env.ANALYTICS_WRITE_KEY || '';
 let analytics: Analytics;
@@ -44,14 +44,17 @@ export const POST: RequestHandler = async ({ request }) => {
 			if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
 			if (!body.userID) return json({ message: 'Please provide userID' }, { status: 400 });
 			analytics.identify({
-				userId: body.userID,
+				anonymousId: hash,
 				traits: body.traits,
 				context: body.context
 			});
 			break;
 		case 'page':
+			if (!body.props.url || !body.props.path)
+				return json({ message: 'Please include url and path in props' }, { status: 400 });
 			analytics.page({
-				properties: body.props,
+				anonymousId: hash,
+				properties: body.props as PageProps,
 				context: body.context
 			});
 			break;

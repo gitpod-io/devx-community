@@ -7,3 +7,10 @@ export interface AnalyticsPayload {
 	context?: any;
 	eventName?: string;
 }
+
+export interface PageProps {
+	url: string;
+	path: string;
+	referrer?: string;
+	title?: string;
+}
