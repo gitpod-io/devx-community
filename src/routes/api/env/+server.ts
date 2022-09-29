@@ -7,6 +7,6 @@ export const GET = async () => {
 		context: env.CONTEXT,
 		secondContext: process.env.CONTEXT,
 		URL: env.URL,
-		secondURL: process.env.CONTEXT
+		secondURL: process.env.URL
 	});
 };
