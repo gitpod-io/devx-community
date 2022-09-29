@@ -6,6 +6,7 @@ export const GET = async () => {
 		success: true,
 		context: env.CONTEXT,
 		branch: env.BRANCH,
-		URL: env.URL
+		URL: env.URL,
+		PRIME_URL: env.DEPLOY_PRIME_URL
 	});
 };
