@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { trackEvent, trackIdentity } from '$lib/utils/analytics';
 	import Dot from '../library/dot.svelte';
 	import GradientCardNoHover from '../library/gradient-card-no-hover.svelte';
 
@@ -17,6 +18,12 @@
 
 		if (isFormValid) {
 			isDisabled = true;
+			trackEvent('message_submitted', {
+				email: email
+			});
+			trackIdentity({
+				email_untrusted: email
+			});
 			try {
 				const response = await fetch('/api/submit-form', {
 					method: 'POST',
@@ -84,7 +91,7 @@
 						href="/privacy">Privacy Policy</a
 					>
 				</p>
-				<div class="mt-x-small flex justify-center">
+				<div class="mt-x-small flex justify-center" data-analytics={`{"dnt":true}`}>
 					<GradientLinkButton {isDisabled} element="button">Sign up</GradientLinkButton>
 				</div>
 			</div>

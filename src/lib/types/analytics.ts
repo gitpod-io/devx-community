@@ -13,4 +13,5 @@ export interface PageProps {
 	path: string;
 	referrer?: string;
 	title?: string;
+	search?: string;
 }

@@ -27,6 +27,18 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	const hash = await generateHash(toHashString);
 
+	const maskIp = (ip: string) => {
+		const octets = ip.split('.');
+		return octets?.length == 4 ? octets.slice(0, 3).concat(['0']).join('.') : undefined;
+	};
+
+	const getServerContext = () => {
+		return {
+			userAgent: agent,
+			ip: maskIp(ip)
+		};
+	};
+
 	if (!writeKey) {
 		return json(null, { status: 204 });
 	}
@@ -37,16 +49,21 @@ export const POST: RequestHandler = async ({ request }) => {
 				anonymousId: hash,
 				event: body.eventName,
 				properties: body.props,
-				context: body.context
+				context: {
+					...body.context,
+					...getServerContext()
+				}
 			});
 			break;
 		case 'identity':
 			if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
-			if (!body.userID) return json({ message: 'Please provide userID' }, { status: 400 });
 			analytics.identify({
 				anonymousId: hash,
 				traits: body.traits,
-				context: body.context
+				context: {
+					...body.context,
+					...getServerContext()
+				}
 			});
 			break;
 		case 'page':
@@ -55,7 +72,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			analytics.page({
 				anonymousId: hash,
 				properties: body.props as PageProps,
-				context: body.context
+				context: {
+					...body.context,
+					...getServerContext()
+				}
 			});
 			break;
 		default:
