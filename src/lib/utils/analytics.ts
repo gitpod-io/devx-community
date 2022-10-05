@@ -34,9 +34,6 @@ export const trackEvent = async (eventName: string, props: any) => {
 		context: { page: pageProps }
 	};
 
-	console.log('Trying track call with payload:');
-	console.dir(body);
-
 	await fetch('/api/analytics', {
 		method: 'POST',
 		body: JSON.stringify(body)
@@ -49,9 +46,6 @@ export const trackIdentity = async (traits: any) => {
 		traits: traits,
 		context: { page: getPageProps() }
 	};
-
-	console.log('Trying identity call with payload:');
-	console.dir(body);
 
 	await fetch('/api/analytics', {
 		method: 'POST',
@@ -66,9 +60,6 @@ export const trackPage = async () => {
 		props: pageProps,
 		context: { page: pageProps }
 	};
-
-	console.log('Trying page call with payload:');
-	console.dir(body);
 
 	await fetch('/api/analytics', {
 		method: 'POST',

@@ -72,15 +72,18 @@
 
 				const currProps = JSON.parse(curr.dataset.analytics || '{}') as TrackDevxClick;
 				//set position in trackingMsg if it can be read from ancestor prop
+
+				const ancestorProps = getPassedProps(curr.parentElement);
+
 				if (implicitPositions.includes(curr_tag)) {
+					console.log(curr_tag);
 					implicitProps.position = curr_tag;
 				}
-				return { ...getPassedProps(curr.parentElement), ...currProps };
+				return { ...ancestorProps, ...currProps };
 			};
 
-			const trackingMsg: TrackDevxClick = { ...implicitProps, ...getPassedProps(curr) };
-
-			console.dir(trackingMsg);
+			const passedProps = getPassedProps(curr);
+			const trackingMsg: TrackDevxClick = { ...implicitProps, ...passedProps };
 
 			if (trackingMsg.dnt) {
 				return;
