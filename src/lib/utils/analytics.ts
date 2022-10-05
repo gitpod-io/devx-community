@@ -14,7 +14,7 @@ export const generateHash = async (value: string) => {
 	return hash;
 };
 
-const getPageProps = () => {
+const getPageProps = (): PageProps => {
 	return {
 		path: window.location.pathname,
 		url: window.location.href,
