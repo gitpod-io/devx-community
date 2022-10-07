@@ -1,3 +1,4 @@
+/* eslint no-empty: ["error", { "allowEmptyCatch": true }] */
 import { json, type RequestHandler } from '@sveltejs/kit';
 import Analytics from 'analytics-node';
 import { env } from '$env/dynamic/private';
@@ -8,9 +9,7 @@ const writeKey = env.ANALYTICS_WRITE_KEY || '';
 let analytics: Analytics;
 try {
 	analytics = new Analytics(writeKey);
-} catch (e) {
-	console.log('No token provided');
-}
+} catch (e) {}
 
 export const POST: RequestHandler = async ({ request }) => {
 	const body = (await request.json()) as AnalyticsPayload;
@@ -40,7 +39,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	};
 
 	if (!writeKey) {
-		return json(null, { status: 204 });
+		return json({ message: 'no token in environment' }, { status: 200 });
 	}
 	switch (body.type) {
 		case 'event':

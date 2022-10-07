@@ -72,7 +72,6 @@
 				const ancestorProps = getPassedProps(curr.parentElement);
 
 				if (implicitPositions.includes(curr_tag)) {
-					console.log(curr_tag);
 					implicitProps.position = curr_tag;
 				}
 				return { ...ancestorProps, ...currProps };

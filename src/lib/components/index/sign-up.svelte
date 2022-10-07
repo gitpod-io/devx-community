@@ -30,7 +30,6 @@
 					body: JSON.stringify(email)
 				});
 				if (response.ok) {
-					console.log(response);
 					isSignupSuccessful = true;
 				} else {
 					isDisabled = false;
