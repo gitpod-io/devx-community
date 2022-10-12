@@ -17,7 +17,6 @@
 				enteries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						target?.classList.add('reveal');
-						console.log('is intersecting:', id);
 						observer.disconnect();
 					}
 				});

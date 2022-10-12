@@ -13,7 +13,10 @@
 	</p>
 	<div>
 		<h4 class="pt-large text-base">Highlighted Episodes</h4>
-		<div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+		<div
+			class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+			data-analytics={`{"context":"highlighted_episodes"}`}
+		>
 			{#each devXPod as item}
 				<GradientContentCard
 					class="aspect-square w-full sm:aspect-[2/1] lg:aspect-square"
