@@ -56,7 +56,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						}
 					},
 					(err) => {
-						console.log(err);
+						if (err) console.error(err);
 					}
 				);
 				break;
@@ -72,7 +72,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						}
 					},
 					(err) => {
-						console.log(err);
+						if (err) console.error(err);
 					}
 				);
 				break;
@@ -89,7 +89,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						}
 					},
 					(err) => {
-						console.log(err);
+						if (err) console.error(err);
 					}
 				);
 				break;
