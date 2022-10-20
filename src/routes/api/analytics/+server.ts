@@ -1,18 +1,15 @@
 /* eslint no-empty: ["error", { "allowEmptyCatch": true }] */
 import { json, type RequestHandler } from '@sveltejs/kit';
-import Analytics from 'analytics-node';
+import fetch from 'node-fetch';
 import { env } from '$env/dynamic/private';
 import { generateHash } from '$lib/utils/analytics';
 import type { AnalyticsPayload, PageProps } from '$lib/types/analytics';
 
 const writeKey = env.ANALYTICS_WRITE_KEY || '';
-let analytics: Analytics;
-try {
-	analytics = new Analytics(writeKey);
-} catch (e) {}
 
 export const POST: RequestHandler = async ({ request }) => {
 	const body = (await request.json()) as AnalyticsPayload;
+	// debugger;
 	const ip = request.headers.get('x-forwarded-for')?.split(',')[0];
 	if (!ip) {
 		return json({ message: 'no x-forwarded-for header provided' }, { status: 400 });
@@ -42,11 +39,15 @@ export const POST: RequestHandler = async ({ request }) => {
 		return json({ message: 'no token in environment' }, { status: 200 });
 	}
 	try {
+		const basicAuthHeader = `${writeKey}:`;
+		const authHeader = Buffer.from(basicAuthHeader).toString('base64');
 		switch (body.type) {
 			case 'event':
 				if (!body.eventName) return json({ message: 'Please provide eventName' }, { status: 400 });
-				analytics.track(
-					{
+				fetch('https://api.segment.io/v1/track', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
+					body: JSON.stringify({
 						anonymousId: hash,
 						event: body.eventName,
 						properties: body.props,
@@ -54,44 +55,41 @@ export const POST: RequestHandler = async ({ request }) => {
 							...body.context,
 							...getServerContext()
 						}
-					},
-					(err) => {
-						if (err) console.error(err);
-					}
-				);
+					})
+				});
+
 				break;
 			case 'identity':
 				if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
-				analytics.identify(
-					{
+				fetch('https://api.segment.io/v1/identify', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
+					body: JSON.stringify({
 						anonymousId: hash,
 						traits: body.traits,
 						context: {
 							...body.context,
 							...getServerContext()
 						}
-					},
-					(err) => {
-						if (err) console.error(err);
-					}
-				);
+					})
+				});
+
 				break;
 			case 'page':
 				if (!body.props.url || !body.props.path)
 					return json({ message: 'Please include url and path in props' }, { status: 400 });
-				analytics.page(
-					{
+				fetch('https://api.segment.io/v1/page', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
+					body: JSON.stringify({
 						anonymousId: hash,
 						properties: body.props as PageProps,
 						context: {
 							...body.context,
 							...getServerContext()
 						}
-					},
-					(err) => {
-						if (err) console.error(err);
-					}
-				);
+					})
+				});
 				break;
 			default:
 				return json({ message: 'please provide valid type' }, { status: 400 });

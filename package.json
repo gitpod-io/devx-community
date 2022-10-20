@@ -27,6 +27,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.0.3",
+		"netlify-cli": "^12.0.11",
 		"postcss": "^8.4.14",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.7.1",
@@ -50,6 +51,7 @@
 	"dependencies": {
 		"analytics-node": "^6.2.0",
 		"google-spreadsheet": "^3.3.0",
-		"nanoid": "^4.0.0"
+		"nanoid": "^4.0.0",
+		"node-fetch": "^3.2.10"
 	}
 }
