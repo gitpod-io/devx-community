@@ -9,7 +9,6 @@ const writeKey = env.ANALYTICS_WRITE_KEY || '';
 
 export const POST: RequestHandler = async ({ request }) => {
 	const body = (await request.json()) as AnalyticsPayload;
-	// debugger;
 	const ip = request.headers.get('x-forwarded-for')?.split(',')[0];
 	if (!ip) {
 		return json({ message: 'no x-forwarded-for header provided' }, { status: 400 });
@@ -54,7 +53,8 @@ export const POST: RequestHandler = async ({ request }) => {
 						context: {
 							...body.context,
 							...getServerContext()
-						}
+						},
+						sendAt: new Date().toISOString()
 					})
 				});
 
@@ -70,7 +70,8 @@ export const POST: RequestHandler = async ({ request }) => {
 						context: {
 							...body.context,
 							...getServerContext()
-						}
+						},
+						sendAt: new Date().toISOString()
 					})
 				});
 
@@ -87,7 +88,8 @@ export const POST: RequestHandler = async ({ request }) => {
 						context: {
 							...body.context,
 							...getServerContext()
-						}
+						},
+						sendAt: new Date().toISOString()
 					})
 				});
 				break;
