@@ -41,45 +41,50 @@ export const POST: RequestHandler = async ({ request }) => {
 	if (!writeKey) {
 		return json({ message: 'no token in environment' }, { status: 200 });
 	}
-	switch (body.type) {
-		case 'event':
-			if (!body.eventName) return json({ message: 'Please provide eventName' }, { status: 400 });
-			analytics.track({
-				anonymousId: hash,
-				event: body.eventName,
-				properties: body.props,
-				context: {
-					...body.context,
-					...getServerContext()
-				}
-			});
-			break;
-		case 'identity':
-			if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
-			analytics.identify({
-				anonymousId: hash,
-				traits: body.traits,
-				context: {
-					...body.context,
-					...getServerContext()
-				}
-			});
-			break;
-		case 'page':
-			if (!body.props.url || !body.props.path)
-				return json({ message: 'Please include url and path in props' }, { status: 400 });
-			analytics.page({
-				anonymousId: hash,
-				properties: body.props as PageProps,
-				context: {
-					...body.context,
-					...getServerContext()
-				}
-			});
-			break;
-		default:
-			return json({ message: 'please provide valid type' }, { status: 400 });
-	}
+	try {
+		switch (body.type) {
+			case 'event':
+				if (!body.eventName) return json({ message: 'Please provide eventName' }, { status: 400 });
+				analytics.track({
+					anonymousId: hash,
+					event: body.eventName,
+					properties: body.props,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
+				break;
+			case 'identity':
+				if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
+				analytics.identify({
+					anonymousId: hash,
+					traits: body.traits,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
+				break;
+			case 'page':
+				if (!body.props.url || !body.props.path)
+					return json({ message: 'Please include url and path in props' }, { status: 400 });
+				analytics.page({
+					anonymousId: hash,
+					properties: body.props as PageProps,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
+				break;
+			default:
+				return json({ message: 'please provide valid type' }, { status: 400 });
+		}
 
-	return json(null, { status: 200 });
+		return json({ message: 'success' }, { status: 200 });
+	} catch (e) {
+		console.log(e);
+		return json({ message: `failed` }, { status: 500 });
+	}
 };
