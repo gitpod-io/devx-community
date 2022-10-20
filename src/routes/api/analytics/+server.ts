@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						...getServerContext()
 					}
 				});
-				fetch('https://api.segment.io/v1/track', {
+				const trackRes = await fetch('https://api.segment.io/v1/track', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
 					body: JSON.stringify({
@@ -67,6 +67,8 @@ export const POST: RequestHandler = async ({ request }) => {
 					})
 				});
 
+				if (!trackRes.ok) console.log(trackRes);
+
 				break;
 			case 'identity':
 				if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
@@ -78,7 +80,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						...getServerContext()
 					}
 				});
-				fetch('https://api.segment.io/v1/identify', {
+				const identifyRes = await fetch('https://api.segment.io/v1/identify', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
 					body: JSON.stringify({
@@ -90,6 +92,8 @@ export const POST: RequestHandler = async ({ request }) => {
 						}
 					})
 				});
+
+				if (!identifyRes.ok) console.log(identifyRes);
 
 				break;
 			case 'page':
@@ -103,7 +107,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						...getServerContext()
 					}
 				});
-				fetch('https://api.segment.io/v1/page', {
+				const pageRes = await fetch('https://api.segment.io/v1/page', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
 					body: JSON.stringify({
@@ -115,6 +119,7 @@ export const POST: RequestHandler = async ({ request }) => {
 						}
 					})
 				});
+				if (!pageRes.ok) console.log(pageRes);
 				break;
 			default:
 				return json({ message: 'please provide valid type' }, { status: 400 });
