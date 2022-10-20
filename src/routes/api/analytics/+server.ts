@@ -44,6 +44,15 @@ export const POST: RequestHandler = async ({ request }) => {
 		switch (body.type) {
 			case 'event':
 				if (!body.eventName) return json({ message: 'Please provide eventName' }, { status: 400 });
+				console.log({
+					anonymousId: hash,
+					event: body.eventName,
+					properties: body.props,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
 				fetch('https://api.segment.io/v1/track', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
@@ -61,6 +70,14 @@ export const POST: RequestHandler = async ({ request }) => {
 				break;
 			case 'identity':
 				if (!body.traits) return json({ message: 'Please provide traits' }, { status: 400 });
+				console.log({
+					anonymousId: hash,
+					traits: body.traits,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
 				fetch('https://api.segment.io/v1/identify', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
@@ -78,6 +95,14 @@ export const POST: RequestHandler = async ({ request }) => {
 			case 'page':
 				if (!body.props.url || !body.props.path)
 					return json({ message: 'Please include url and path in props' }, { status: 400 });
+				console.log({
+					anonymousId: hash,
+					properties: body.props as PageProps,
+					context: {
+						...body.context,
+						...getServerContext()
+					}
+				});
 				fetch('https://api.segment.io/v1/page', {
 					method: 'POST',
 					headers: { 'Content-Type': 'application/json', Authorization: `Basic ${authHeader}` },
