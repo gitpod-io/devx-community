@@ -54,7 +54,7 @@ export const POST: RequestHandler = async ({ request }) => {
 							...body.context,
 							...getServerContext()
 						},
-						sendAt: new Date().toISOString()
+						sentAt: new Date().toISOString()
 					})
 				});
 
@@ -71,7 +71,7 @@ export const POST: RequestHandler = async ({ request }) => {
 							...body.context,
 							...getServerContext()
 						},
-						sendAt: new Date().toISOString()
+						sentAt: new Date().toISOString()
 					})
 				});
 
@@ -89,7 +89,7 @@ export const POST: RequestHandler = async ({ request }) => {
 							...body.context,
 							...getServerContext()
 						},
-						sendAt: new Date().toISOString()
+						sentAt: new Date().toISOString()
 					})
 				});
 				break;
