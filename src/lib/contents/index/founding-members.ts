@@ -59,6 +59,14 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/tealeg'
 	},
 	{
+		imgsrc: '/images/portraits/zohar_einy.jpeg',
+		name: 'Zohar Einy',
+		role: 'CEO',
+		company: '@Port',
+		linkedinLink: 'https://www.linkedin.com/in/zohar-einy-b6219612a/',
+		twitterLink: 'https://twitter.com/ZoharEiny'
+	},
+	{
 		imgsrc: '/images/portraits/elvis_kahoro.jpeg',
 		name: 'Elvis Kahoro',
 		company: '@Warp',

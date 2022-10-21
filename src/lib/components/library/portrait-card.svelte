@@ -9,11 +9,11 @@
 	export let portrait: Portrait;
 </script>
 
-<div>
+<div class="w-1/3 md:w-1/4 lg:w-1/5">
 	<div class="flex h-full flex-col items-center justify-between">
 		<div class="relative inline-block">
 			<img
-				class="rounded-2xl grayscale"
+				class="aspect-square rounded-2xl object-cover grayscale"
 				width="170"
 				height="170"
 				alt="photo of {portrait.name}"
