@@ -34,7 +34,7 @@ export const trackEvent = async (eventName: string, props: any) => {
 		context: { page: pageProps }
 	};
 
-	await fetch('/api/analytics', {
+	await fetch('/api/collect-data', {
 		method: 'POST',
 		body: JSON.stringify(body)
 	});
@@ -47,7 +47,7 @@ export const trackIdentity = async (traits: any) => {
 		context: { page: getPageProps() }
 	};
 
-	await fetch('/api/analytics', {
+	await fetch('/api/collect-data', {
 		method: 'POST',
 		body: JSON.stringify(body)
 	});
@@ -61,7 +61,7 @@ export const trackPage = async () => {
 		context: { page: pageProps }
 	};
 
-	await fetch('/api/analytics', {
+	await fetch('/api/collect-data', {
 		method: 'POST',
 		body: JSON.stringify(body)
 	});
