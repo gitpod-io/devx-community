@@ -6,7 +6,7 @@
 	:root {
 		--dark-black: #070707;
 		--black: #161616;
-		--grey: #5d5959;
+		--grey: #5a5353;
 		--grey-light: #bfbfbf;
 		--grey-slight: #f5f4f4;
 		--red: #ff5043;
@@ -76,7 +76,7 @@
 	}
 
 	html {
-		@apply box-border overflow-x-hidden;
+		@apply box-border scroll-p-xx-small overflow-x-hidden;
 	}
 
 	body {

@@ -8,7 +8,7 @@
 <svelte:window bind:scrollY={scroll} />
 <nav
 	class:scrolled-out={scroll > 10}
-	class="sticky top-0 z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg p-4"
+	class="sticky top-0 z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg px-x-small py-4"
 >
 	<div class="flex justify-between">
 		<Devx />
@@ -21,7 +21,10 @@
 					<a href="#community">Community</a>
 				</li>
 				<li>
-					<a href="#resources">Resources</a>
+					<a
+						class="no-underline transition-all delay-50 duration-200 hover:font-bold hover:text-black"
+						href="#resources">Resources</a
+					>
 				</li>
 			</ul>
 			<ThemeSwitcher />
