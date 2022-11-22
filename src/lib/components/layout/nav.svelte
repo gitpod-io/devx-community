@@ -12,7 +12,20 @@
 >
 	<div class="flex justify-between">
 		<Devx />
-		<ThemeSwitcher />
+		<div class="flex items-center gap-x-small">
+			<ul class="flex gap-x-small text-p-small">
+				<li>
+					<a href="#devx">DevX</a>
+				</li>
+				<li>
+					<a href="#community">Community</a>
+				</li>
+				<li>
+					<a href="#resources">Resources</a>
+				</li>
+			</ul>
+			<ThemeSwitcher />
+		</div>
 	</div>
 </nav>
 

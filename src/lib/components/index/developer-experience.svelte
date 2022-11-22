@@ -6,7 +6,7 @@
 	import Section from '../library/section.svelte';
 </script>
 
-<Section title="What is developer experience?" class="relative">
+<Section id="devx" title="What is developer experience?" class="relative">
 	<div class="mx-auto max-w-xl pb-small md:pb-large">
 		<h3 class="h4 pb-4 md:pb-xx-small">Community Manifesto</h3>
 		<p>

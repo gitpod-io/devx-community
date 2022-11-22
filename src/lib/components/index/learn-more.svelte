@@ -11,6 +11,7 @@
 </script>
 
 <Section
+	id="resources"
 	title="Learn more about developer experience"
 	text="We are creating a multi-media knowledge base to help demystify the world of developer experience. Start here!"
 	titleClassNames="max-w-4xl mx-auto"
