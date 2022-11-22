@@ -18,20 +18,28 @@
 		query.addEventListener('change', handleTabletChange);
 	});
 
+	const hideMobileMenu = () => {
+		$showMobileMenu = false;
+		showHideOverflowY(false);
+	};
+
 	$: if ($navigating) {
 		$showMobileMenu = false;
 		showHideOverflowY(false);
 	}
 </script>
 
+<svelte:window on:hashchange={hideMobileMenu} />
 {#if $showMobileMenu}
 	<div
 		class="absolute top-full z-10 flex max-h-screen w-screen flex-col items-center border-b border-sub bg-box py-4 transition-none lg:hidden"
 	>
-		<ul class="">
+		<ul class="w-full divide-y-2 divide-bg">
 			{#each navItems as item}
-				<li class="py-4 text-center">
-					<a href={item.href}>{item.title}</a>
+				<li class="py-3 px-xx-small">
+					<a class="no-underline hover:text-important focus:text-important" href={item.href}
+						>{item.title}</a
+					>
 				</li>
 			{/each}
 		</ul>
