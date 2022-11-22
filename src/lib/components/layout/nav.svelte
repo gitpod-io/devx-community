@@ -1,6 +1,11 @@
 <script lang="ts">
 	import Devx from '../svgs/devx.svelte';
 	import ThemeSwitcher from './theme-switcher.svelte';
+	import { navItems } from '$lib/contents/nav';
+	import MobileMenu from './mobile-nav/index.svelte';
+	import Toggle from './mobile-nav/toggle.svelte';
+
+	import showMobileMenu from '$lib/stores/mobile-menu';
 
 	let scroll: number;
 </script>
@@ -8,28 +13,29 @@
 <svelte:window bind:scrollY={scroll} />
 <nav
 	class:scrolled-out={scroll > 10}
-	class="sticky top-0 z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg px-x-small py-4"
+	class="sticky top-0 z-10 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg "
 >
-	<div class="flex justify-between">
+	<div
+		class:bg-box={$showMobileMenu}
+		class="relative flex justify-between px-4 py-4 transition-none lg:px-small"
+	>
 		<Devx />
-		<div class="flex items-center gap-x-small">
+		<div class="hidden items-center gap-x-small lg:flex">
 			<ul class="flex gap-x-small text-p-small">
-				<li>
-					<a href="#devx">DevX</a>
-				</li>
-				<li>
-					<a href="#community">Community</a>
-				</li>
-				<li>
-					<a
-						class="no-underline transition-all delay-50 duration-200 hover:font-bold hover:text-black"
-						href="#resources">Resources</a
-					>
-				</li>
+				{#each navItems as navItem}
+					<li>
+						<a
+							class="no-underline transition-all delay-50 duration-200 hover:text-black"
+							href={navItem.href}>{navItem.title}</a
+						>
+					</li>
+				{/each}
 			</ul>
 			<ThemeSwitcher />
 		</div>
+		<Toggle />
 	</div>
+	<MobileMenu />
 </nav>
 
 <style lang="postcss">

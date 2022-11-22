@@ -21,7 +21,8 @@ const config = {
 				box: 'var(--box)'
 			},
 			boxShadow: {
-				'hover-default': 'var(--shadow-hover-default)'
+				'hover-default': 'var(--shadow-hover-default)',
+				default: 'var(--shadow-default)'
 			},
 			transitionDelay: {
 				50: '50ms'
