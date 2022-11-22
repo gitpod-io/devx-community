@@ -8,7 +8,7 @@
 <svelte:window bind:scrollY={scroll} />
 <nav
 	class:scrolled-out={scroll > 10}
-	class="fixed z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg p-4"
+	class="sticky top-0 z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg p-4"
 >
 	<div class="flex justify-between">
 		<Devx />
