@@ -1,9 +1,24 @@
-<script>
+<script lang="ts">
 	import Devx from '../svgs/devx.svelte';
 	import ThemeSwitcher from './theme-switcher.svelte';
+
+	let scroll: number;
 </script>
 
-<nav class="flex justify-between px-4 pt-5 sm:px-x-small">
-	<Devx />
-	<ThemeSwitcher />
+<svelte:window bind:scrollY={scroll} />
+<nav
+	class:scrolled-out={scroll > 10}
+	class="fixed z-40 mx-auto w-full border-b border-t-0 border-solid border-transparent bg-bg p-4"
+>
+	<div class="flex justify-between">
+		<Devx />
+		<ThemeSwitcher />
+	</div>
 </nav>
+
+<style lang="postcss">
+	.scrolled-out {
+		@apply border-b border-sub bg-nav;
+		backdrop-filter: blur(10px);
+	}
+</style>

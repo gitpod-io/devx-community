@@ -12,6 +12,7 @@ const config = {
 					'white-light': 'var(--white-light)',
 					'grey-slight': 'var(--grey-slight)'
 				},
+				nav: 'var(--nav)',
 				highlight: 'var(--highlight)',
 				important: 'var(--important)',
 				body: 'var(--body)',

@@ -15,6 +15,9 @@
 		--white: #fdfdfd;
 		--white-light: #fdfbfb;
 
+		--grey-slight-alpha: #f5f4f4cc;
+		--black-alpha: #161616cc;
+
 		--highlight: var(--red);
 
 		--xx-large: 10rem;
@@ -44,6 +47,7 @@
 		--sub: var(--brown-light);
 		--bg: var(--grey-slight);
 		--box: var(--white);
+		--nav: var(--grey-slight-alpha);
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #cdc0b2 79.06%);
 		--gradient-stroke: linear-gradient(180deg, #ffffff 0%, #ece7e5 100%);
@@ -55,6 +59,7 @@
 		--sub: var(--brown-dark);
 		--bg: var(--black);
 		--box: var(--dark-black);
+		--nav: var(--black-alpha);
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #64584a 79.06%);
 		--gradient-stroke: linear-gradient(179.95deg, #332d23 0.04%, #0f0e0b 99.8%);
