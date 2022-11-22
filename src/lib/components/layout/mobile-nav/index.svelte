@@ -26,7 +26,7 @@
 
 {#if $showMobileMenu}
 	<div
-		class="absolute top-full z-10 flex max-h-screen w-screen flex-col items-center border-b border-sub bg-box py-4 lg:hidden"
+		class="absolute top-full z-10 flex max-h-screen w-screen flex-col items-center border-b border-sub bg-box py-4 transition-none lg:hidden"
 	>
 		<ul class="">
 			{#each navItems as item}
