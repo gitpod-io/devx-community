@@ -25,7 +25,7 @@
 				{#each navItems as navItem}
 					<li>
 						<a
-							class="no-underline transition-all delay-50 duration-200 hover:text-black"
+							class="no-underline transition-all delay-50 duration-200 hover:text-important"
 							href={navItem.href}>{navItem.title}</a
 						>
 					</li>
