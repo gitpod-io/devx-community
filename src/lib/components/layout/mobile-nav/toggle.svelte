@@ -15,7 +15,7 @@
 
 <button
 	on:click={handleToggle}
-	class="rounded-2xl {$showMobileMenuStore
+	class="flex w-small items-center justify-center rounded-2xl {$showMobileMenuStore
 		? 'bg-bg'
 		: 'bg-important'} px-4 py-1 shadow-default lg:hidden"
 >

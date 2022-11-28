@@ -14,7 +14,7 @@
 				showHideOverflowY(false);
 			}
 		};
-		let query = window.matchMedia('(min-width: 768px)');
+		let query = window.matchMedia('(min-width: 1024px)');
 		query.addEventListener('change', handleTabletChange);
 	});
 
