@@ -12,6 +12,7 @@ const config = {
 					'white-light': 'var(--white-light)',
 					'grey-slight': 'var(--grey-slight)'
 				},
+				nav: 'var(--nav)',
 				highlight: 'var(--highlight)',
 				important: 'var(--important)',
 				body: 'var(--body)',
@@ -20,7 +21,8 @@ const config = {
 				box: 'var(--box)'
 			},
 			boxShadow: {
-				'hover-default': 'var(--shadow-hover-default)'
+				'hover-default': 'var(--shadow-hover-default)',
+				default: 'var(--shadow-default)'
 			},
 			transitionDelay: {
 				50: '50ms'

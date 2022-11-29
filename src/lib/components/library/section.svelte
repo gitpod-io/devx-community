@@ -14,7 +14,7 @@
 	export { clazz as class };
 </script>
 
-<section class="pt-small md:pt-large {clazz}">
+<section {...$$restProps} class="pt-small md:pt-large {clazz}">
 	<Reveal disabled={isRevealDisabled} class={revealClassNames}>
 		<h2 class="h2 pb-small text-center {titleClassNames}">{title}</h2>
 		{#if text}<p class="mx-auto {textClassNames}">{@html text}</p>{/if}
