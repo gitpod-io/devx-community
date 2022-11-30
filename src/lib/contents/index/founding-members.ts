@@ -62,9 +62,7 @@ export const foundingMembers: Portrait[] = [
 		imgsrc: '/images/portraits/alexander_podkhalyuzin.jpg',
 		name: 'Alexander Podkhalyuzin',
 		role: 'Customer Success Engineer',
-		company: '@Jetbrains',
-		linkedinLink: '#',
-		twitterLink: '#'
+		company: '@Jetbrains'
 	},
 	{
 		imgsrc: '/images/portraits/zohar_einy.jpeg',
