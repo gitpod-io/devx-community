@@ -59,6 +59,12 @@ export const foundingMembers: Portrait[] = [
 		twitterLink: 'https://twitter.com/tealeg'
 	},
 	{
+		imgsrc: '/images/portraits/alexander_podkhalyuzin.jpg',
+		name: 'Alexander Podkhalyuzin',
+		role: 'Customer Success Engineer',
+		company: '@Jetbrains'
+	},
+	{
 		imgsrc: '/images/portraits/zohar_einy.jpeg',
 		name: 'Zohar Einy',
 		role: 'CEO',

@@ -21,7 +21,7 @@
 			/>
 			<Dot class="absolute -top-5 -left-8 -z-10 h-16 w-16" />
 		</div>
-		<div class="mt-2 font-bold text-important">{portrait.name}</div>
+		<div class="mt-2 text-center font-bold text-important">{portrait.name}</div>
 		<div class="mt-2 text-center text-xs">{portrait.role}</div>
 		<div class="mt-2 text-xs">{portrait.company}</div>
 		<div class="mt-3 flex justify-center gap-3">
