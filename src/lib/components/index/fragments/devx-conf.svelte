@@ -7,9 +7,9 @@
 
 <ContentSection id="devx-conf" title="DevX Conf" annotation="watch" icon={Watch}>
 	<p slot="text" class="pt-x-small text-justify">
-		<a href="https://devxconf.org" target="_blank">DevX Conf</a> is a virtual conference on developer
-		experience that happens every year. DevX practitioners at leading companies discuss their best tools,
-		processes, and latest learnings.
+		<a href="https://devxconf.org" rel="noreferrer" target="_blank">DevX Conf</a> is a virtual conference
+		on developer experience that happens every year. DevX practitioners at leading companies discuss
+		their best tools, processes, and latest learnings.
 	</p>
 	<div>
 		<h4 class="pt-large text-base">Highlighted Talks</h4>

@@ -15,13 +15,13 @@
 				<p class="mb-4 md:mb-0 md:!mt-0">
 					An initative organised by Gitpod.
 					<br />
-					<a href="https://www.gitpod.io" target="_blank">gitpod.io</a>
+					<a rel="noreferrer" href="https://www.gitpod.io" target="_blank">gitpod.io</a>
 				</p>
 				<Gitpod class="w-16 md:w-24" />
 			</div>
 			<FooterDots class="hidden items-center md:flex" />
 			<div class="mt-medium flex w-full flex-col gap-x-small md:mt-0 md:items-end">
-				<a target="_blank" href="https://twitter.com/devxconf"><Twitter /></a>
+				<a rel="noreferrer" target="_blank" href="https://twitter.com/devxconf"><Twitter /></a>
 			</div>
 		</div>
 		<div class="pt-4 text-center">
@@ -31,8 +31,11 @@
 				</li>
 				<li><a class="text-xs" href="/imprint">Imprint</a></li>
 				<li>
-					<a target="_blank" class="text-xs" href="https://www.github.com/gitpod-io/devx-community"
-						>Source Code</a
+					<a
+						rel="noreferrer"
+						target="_blank"
+						class="text-xs"
+						href="https://www.github.com/gitpod-io/devx-community">Source Code</a
 					>
 				</li>
 			</ul>

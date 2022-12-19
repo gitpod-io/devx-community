@@ -257,11 +257,14 @@
 				<br /><br />
 				You have the right to lodge a complaint vis-à-vis a supervisory authority of your choice. For
 				example for Berlin/Germany:
-				<a rel="noopener" target="_blank" href="https://www.datenschutz-berlin.de/kontakt.html"
+				<a
+					rel="noopener noreferrer"
+					target="_blank"
+					href="https://www.datenschutz-berlin.de/kontakt.html"
 					>https://www.datenschutz-berlin.de/kontakt.html</a
 				>. An overview of the European National Data Protection Authorities may be found here:
 				<a
-					rel="noopener"
+					rel="noopener noreferrer"
 					href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
 					target="_blank"
 				>
