@@ -4,11 +4,9 @@
 	import { navItems } from '$lib/contents/nav';
 	import MobileMenu from './mobile-nav/index.svelte';
 	import Toggle from './mobile-nav/toggle.svelte';
-	import { page } from '$app/stores';
 
 	import showMobileMenu from '$lib/stores/mobile-menu';
 
-	console.log($page.url.pathname);
 	let scroll: number;
 </script>
 
