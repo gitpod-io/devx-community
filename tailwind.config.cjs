@@ -29,7 +29,8 @@ const config = {
 			},
 			backgroundImage: {
 				primary: 'var(--gradient-primary)',
-				stroke: 'var(--gradient-stroke)'
+				stroke: 'var(--gradient-stroke)',
+				404: 'var(--gradient-404)'
 			},
 			spacing: {
 				'xx-large': 'var(--xx-large)',

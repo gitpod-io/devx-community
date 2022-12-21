@@ -1,14 +1,14 @@
 export const navItems = [
 	{
-		href: '#devx',
+		href: '/#devx',
 		title: 'DevX'
 	},
 	{
-		href: '#community',
+		href: '/#community',
 		title: 'Community'
 	},
 	{
-		href: '#resources',
+		href: '/#resources',
 		title: 'Resources'
 	}
 ];

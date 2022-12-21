@@ -53,6 +53,7 @@
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #cdc0b2 79.06%);
 		--gradient-stroke: linear-gradient(180deg, #ffffff 0%, #ece7e5 100%);
+		--gradient-404: linear-gradient(224.91deg, var(--white) 32.52%, var(--brown-light) 79.06%);
 	}
 
 	body.dark {
@@ -65,6 +66,7 @@
 
 		--gradient-primary: linear-gradient(224.91deg, var(--red) 32.52%, #64584a 79.06%);
 		--gradient-stroke: linear-gradient(179.95deg, #332d23 0.04%, #0f0e0b 99.8%);
+		--gradient-404: linear-gradient(224.91deg, var(--dark-black) 32.52%, var(--brown-dark) 79.06%);
 	}
 
 	*,

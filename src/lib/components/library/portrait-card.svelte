@@ -25,9 +25,14 @@
 		<div class="mt-2 text-center text-xs">{portrait.role}</div>
 		<div class="mt-2 text-xs">{portrait.company}</div>
 		<div class="mt-3 flex justify-center gap-3">
-			{#if portrait.githubLink}<a target="_blank" href={portrait.githubLink}> <Github /></a>{/if}
-			{#if portrait.twitterLink}<a target="_blank" href={portrait.twitterLink}><Twitter /></a>{/if}
-			{#if portrait.linkedinLink}<a target="_blank" href={portrait.linkedinLink}><Linkedin /></a
+			{#if portrait.githubLink}<a target="_blank" rel="noreferrer" href={portrait.githubLink}>
+					<Github /></a
+				>{/if}
+			{#if portrait.twitterLink}<a target="_blank" rel="noreferrer" href={portrait.twitterLink}
+					><Twitter /></a
+				>{/if}
+			{#if portrait.linkedinLink}<a target="_blank" rel="noreferrer" href={portrait.linkedinLink}
+					><Linkedin /></a
 				>{/if}
 		</div>
 	</div>

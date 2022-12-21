@@ -51,7 +51,7 @@
 	<h4 class="pt-4">Settlements of Disputes</h4>
 	<p>
 		The European Commission provides a platform for an online settlement of disputes which can be
-		accessed under <a href="https://ec.europa.eu/consumers/odr/" target="_blank"
+		accessed under <a href="https://ec.europa.eu/consumers/odr/" rel="noreferrer" target="_blank"
 			>https://ec.europa.eu/consumers/odr/</a
 		>. Gitpod is neither obliged to take part in alternative dispute resolutions before a consumer
 		dispute settlement commission or will do so voluntarily.

@@ -1,11 +1,12 @@
 import gs from 'google-spreadsheet';
+import { env } from '$env/dynamic/private';
 
 export default async (sheetInfo: { title: string; data: any }): Promise<boolean | string> => {
 	try {
 		const doc = new gs.GoogleSpreadsheet(process.env.FEEDBACK_SHEET_ID);
 		await doc.useServiceAccountAuth({
-			client_email: process.env.FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL,
-			private_key: Buffer.from(process.env.FEEDBACK_GOOGLE_PRIVATE_KEY_BASE64, 'base64').toString(
+			client_email: env.FEEDBACK_GOOGLE_SERVICE_ACCOUNT_EMAIL as string,
+			private_key: Buffer.from(env.FEEDBACK_GOOGLE_PRIVATE_KEY_BASE64 as string, 'base64').toString(
 				'utf8'
 			)
 		});
