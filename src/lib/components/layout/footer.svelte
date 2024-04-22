@@ -21,7 +21,7 @@
 			</div>
 			<FooterDots class="hidden items-center md:flex" />
 			<div class="mt-medium flex w-full flex-col gap-x-small md:mt-0 md:items-end">
-				<a rel="noreferrer" target="_blank" href="https://twitter.com/devxconf"><Twitter /></a>
+				<a rel="noreferrer" target="_blank" href="https://twitter.com/devxcommunity"><Twitter /></a>
 			</div>
 		</div>
 		<div class="pt-4 text-center">
