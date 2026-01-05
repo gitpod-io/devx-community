@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "build/"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [functions]
   directory = "src/functions"
   node_bundler = "esbuild"
@@ -9,4 +12,4 @@
 [dev]
   command = "npm run dev"
   targetPort = 5173
-  
+
