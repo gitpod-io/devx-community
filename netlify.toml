@@ -13,9 +13,3 @@
   command = "npm run dev"
   targetPort = 5173
 
-[[redirects]]
-  from = "/*"
-  to = "https://ona.com"
-  status = 302
-  force = true
-
